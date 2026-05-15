@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* VPlay Brand Colors */
+  --color-vplay-blue: #0052cc;
+  --color-vplay-blue-light: #1a6fe8;
+  --color-vplay-blue-dark: #003a99;
+  --color-vplay-navy: #050d2e;
+  --color-vplay-navy-mid: #0a1540;
+  --color-vplay-cyan: #00c2ff;
+  --color-vplay-gold: #f5a623;
+}
+
+:root {
+  --background: #050d2e;
+  --foreground: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a1540;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a6fe8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0052cc;
+}
+
+/* Glow animation for active elements */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 10px rgba(0, 194, 255, 0.4); }
+  50% { box-shadow: 0 0 20px rgba(0, 194, 255, 0.8); }
+}
+
+@keyframes slide-in-right {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fade-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-glow {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease-out forwards;
+}
+
+/* Game card hover effect */
+.game-card:hover .game-card-overlay {
+  opacity: 1;
+}
+
+.game-card:hover .game-card-img {
+  transform: scale(1.08);
+}
