@@ -8,14 +8,14 @@ const ListGames = () => {
       </p>
 
       <div key="mmo" className="game_card flex flex-col mt-6 ">
-        <div className="img_item_news_one relative w-full aspect-video  overflow-hidden ">
-            <Image
-              src="/Images/Rectangle 26.png"
-              alt="#"
-              fill
-              className="image_one object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
+        <div className="game_item relative w-full h-[300px] flex-shrink-0">
+          <Image
+            src="/images/Rectangle19.png"
+            alt="MMO"
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
 
         <div className="bg-zinc-800 px-3 py-4">
           <h3 className="text-xl font-bold text-white">MMO</h3>
