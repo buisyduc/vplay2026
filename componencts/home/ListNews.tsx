@@ -10,7 +10,7 @@ const ListNews = () => {
         <div className="item_news_one flex flex-col   w-full  ">
           <div className="img_item_news_one relative w-full aspect-video  overflow-hidden ">
             <Image
-              src="/Images/Rectangle 26.png"
+              src="/Images/Rectangle 37.png"
               alt="#"
               fill
               className="image_one object-cover transition-transform duration-300 group-hover:scale-105"
