@@ -10,8 +10,8 @@ const ListGames = () => {
       <div key="mmo" className="game_card flex flex-col mt-6 ">
         <div className="game_item relative w-full h-[300px] flex-shrink-0">
           <Image
-            src="/images/Rectangle1111.png"
-            alt="MMO"
+            src="/images/Rectangle 37.png"
+            alt="#"
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
