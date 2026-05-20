@@ -10,7 +10,7 @@ const ListGames = () => {
       <div key="mmo" className="game_card flex flex-col mt-6 ">
         <div className="game_item relative w-full h-[300px] flex-shrink-0">
           <Image
-            src="/images/Rectangle 37.png"
+              src="/Images/Rectangle 26.png"
             alt="#"
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -48,7 +48,7 @@ const ListGames = () => {
       <div key="rpg" className="game_card flex flex-col mt-6">
         <div className="game_item relative w-full h-[300px] flex-shrink-0">
           <Image
-            src="/images/Rectangle2222.png"
+              src="/Images/Rectangle 26.png"
             alt="RPG"
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -86,7 +86,7 @@ const ListGames = () => {
       <div key="html5" className="game_card flex flex-col mt-6">
         <div className="game_item relative w-full h-[300px] flex-shrink-0">
           <Image
-            src="/images/Rectangle3333.png"
+              src="/Images/Rectangle 26.png"
             alt="HTML5"
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
