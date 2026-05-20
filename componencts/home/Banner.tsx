@@ -2,8 +2,6 @@
 import Image from "next/image";
 
 const HeroBanner = () => {
-
-
   return (
     <section className="relative w-full h-[480px] md:h-[560px]">
       <div className="absolute inset-0">
@@ -14,7 +12,7 @@ const HeroBanner = () => {
           priority
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f19] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f19] from-10% via-[#0b0f19]/40 via-70% to-transparent" />{" "}
       </div>
 
       <div className="absolute top-4 right-1/2 translate-x-1/2">
@@ -29,5 +27,5 @@ const HeroBanner = () => {
       </div>
     </section>
   );
-}
+};
 export default HeroBanner;

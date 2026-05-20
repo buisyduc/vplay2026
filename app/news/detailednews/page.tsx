@@ -1,7 +1,6 @@
 import Header from "@/componencts/layout/Header";
 import Footer from "@/componencts/layout/Footer";
-import Ecosystem from "@/componencts/ecosystem/Ecosystem";
-import BannerMain from "@/componencts/home/BannerMain";
+import DetailedNews from "@/componencts/detailednews/DetailedNews";
 import './responsive.css';
 
 export default function Home() {
@@ -22,12 +21,11 @@ export default function Home() {
           />
 
           <div className="relative z-10 flex flex-col">
-            <Ecosystem />
-
-            <BannerMain />
+            <DetailedNews />
           </div>
         </div>
       </main>
+
       <Footer />
     </div>
   );

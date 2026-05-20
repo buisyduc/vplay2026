@@ -1,37 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
+
 const ListItems = [
   { id: 1, thumbnail: "/Images/Frame123.jpg", code: "Nạp" },
   { id: 2, thumbnail: "/Images/Frame24.png", code: "ESPORTS" },
   { id: 3, thumbnail: "/Images/Frame22.png", code: "GAME H5" },
-  { id: 4, thumbnail: "/Images/Frame23.png", code: "MINIGAME" },
+  { id: 4, thumbnail: "/Images/Frame23.png", code: "MINIGAME" }
 ];
 
 const Ecosystem = () => {
   return (
-    <div className="w-full py-12 px-6">
-      <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row items-center gap-10">
-
-        {/* Left: Text block */}
-        <div className="md:w-[320px] shrink-0 text-white">
-          <h2 className="text-3xl font-bold leading-tight mb-4">
-            Khám phá <br /> Hệ sinh thái
+    <div className="list-ecosystem w-full py-12">
+      <div className="ecosystem-inner max-w-[1100px] mx-auto  gap-6">
+        <div className="ecosystem-text shrink-0 text-white w-full md:w-auto">
+          <h2 className="text-2xl md:text-3xl font-bold leading-tight mb-4 text-center md:text-left">
+            Khám phá <br className="br" /> Hệ sinh thái
           </h2>
-          <p className="text-sm text-gray-300 leading-relaxed mb-6">
-            Lorem ipsum dolor sit amet consectetur. Elementum risus leo tortor enim.
-            A sed sit nisi ornare lectus tristique diam bibendum imperdiet. Lectus
-            purus ornare elit purus. Enim sit blandit id cras massa.
+          <p className="text-gray-300 leading-relaxed mb-6 text-xs text-center md:text-left">
+            Lorem ipsum dolor sit amet consectetur. Elementum risus leo tortor
+            enim. A sed sit nisi ornare lectus tristique diam bibendum
+            imperdiet. Lectus purus ornare elit purus. Enim sit blandit id cras
+            massa
           </p>
-          <Link href="/ecosystem">
-            <button className="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-300 px-5 py-2 text-sm font-semibold rounded">
-              XEM TẤT CẢ
-            </button>
-          </Link>
-          
+          <div className="button flex justify-center md:justify-start">
+            <Link href="/ecosystem">
+              <button className="text-white bg-blue-700 hover:bg-blue-600 transition-all duration-300 px-5 py-2 text-xs font-semibold">
+                XEM TẤT CẢ
+              </button>
+            </Link>
+          </div>
         </div>
 
         {/* Right: Cards */}
-        <div className="flex flex-1 gap-3 overflow-x-auto">
+        <div className="game-item-ecostystemf ">
           {ListItems.map((item) => (
             <div
               key={item.id}
@@ -41,20 +42,27 @@ const Ecosystem = () => {
                 src={item.thumbnail}
                 alt={item.code}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                className="object-cover group-hover: transition-transform duration-300  "
               />
-              {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-blue-600/75 to-transparent transition-all duration-400 ease-in-out group-hover:h-20 z-10" />
 
-              {/* Label + arrow */}
               <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white">
-                <span className="text-sm font-bold tracking-wide">{item.code}</span>
-                <span className="text-lg font-bold">→</span>
+                <span className="text-sm font-bold tracking-wide mb-8">
+                  {item.code}
+                </span>
+                <span className="text-lg font-bold mt-4">→</span>
               </div>
             </div>
           ))}
         </div>
-
+      </div>
+      <div className="button_game">
+         <Link href="/ecosystem">
+          <button className=" lg:hidden shrink-0 border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-300 px-5 py-2 text-sm font-semibold rounded">
+            Xem tất cả
+          </button>
+        </Link>
       </div>
     </div>
   );

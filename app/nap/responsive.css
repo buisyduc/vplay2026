@@ -1,0 +1,59 @@
+/* PC */
+@media (min-width: 992px) {
+.list-games {
+    padding-inline: 1rem;
+  }
+.list-news {
+    padding-inline: 1rem;
+ }
+.newsletter-banner {
+    padding-inline: 3rem;
+ }
+}
+/* Tablet  & Mobile */
+@media (max-width: 991.98px) {
+   .newsletter-banner {
+    padding-inline: 3rem;
+  }
+  .from_footer_center {
+    width: 600px;
+    display: flex;
+  }
+
+  
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .newsletter-banner {
+    padding-inline: 3rem;
+  }
+}
+/* Mobile */
+@media (max-width: 767.98px) {
+   .from_footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .from_footer_center {
+    display: block;
+    width: 28rem;
+    max-width: 100%;
+  }
+  .from_footer_center button {
+    width: 26rem;
+    max-width: 100%;
+    margin: 5px;
+  }
+  .from_footer_center input {
+    width: 26rem;
+    max-width: 100%;
+    margin: 5px;
+    
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 484.98px) {
+.dangnhap {
+ display: none;
+}
+}

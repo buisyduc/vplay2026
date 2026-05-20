@@ -1,0 +1,570 @@
+/* PC */
+@media (min-width: 992px) {
+  .from_footer {
+    display: flex;
+  }
+  .from_footer_center {
+    display: flex;
+  }
+  .item-news-home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .game-item-ecostystemf {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+  }
+
+  .list-games {
+    padding-inline: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  .list-news {
+    padding-inline: 1rem;
+  }
+  .newsletter-banner {
+    padding-inline: 3rem;
+  }
+  .ecosystem-inner {
+    padding-inline: 1rem;
+    display: flex;
+  }
+  .ecosystem-text {
+    width: 300px;
+  }
+  .button_game {
+    display: none;
+  }
+  .text_news {
+    display: none;
+  }
+  .list_news_content {
+    display: flex;
+    gap: 1rem;
+  }
+  .item_news_one {
+    background-color: rgb(63, 63, 63);
+    border-radius: 10px;
+  }
+  .image_one {
+    padding: 15px;
+  }
+  .text_item_news_one p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .text_item_news_one h4 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .item_news_two {
+    background-color: rgb(63, 63, 63);
+    border-radius: 10px;
+  }
+  .image_two {
+    padding: 10px;
+  }
+  .text_item_news_two p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .text_item_news_two h4 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .item_news_three {
+    background-color: rgb(63, 63, 63);
+    border-radius: 10px;
+  }
+  .image_three {
+    padding: 10px;
+  }
+  .text_item_news_three p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .text_item_news_three h4 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .item_news_four {
+    background-color: rgb(63, 63, 63);
+    border-radius: 10px;
+  }
+  .image_four {
+    padding: 10px;
+  }
+  .text_item_news_four p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .text_item_news_four h4 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .item_news_five {
+    background-color: rgb(63, 63, 63);
+    border-radius: 10px;
+  }
+  .image_five {
+    padding: 10px;
+  }
+  .text_item_news_five p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .text_item_news_five h4 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+/* Tablet  & Mobile */
+@media (max-width: 991.98px) {
+  .from_footer {
+    display: flex;
+  }
+
+  .item-news-home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .game-item-ecostystemf {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    padding-inline: 1rem;
+  }
+  .newsletter-banner {
+    padding-inline: 3rem;
+  }
+  .menu {
+    display: none;
+  }
+
+  .list-games {
+    padding-inline: 1rem;
+    grid-template-columns: 1fr !important;
+  }
+
+  .list-games .game_card {
+    grid-column: span 1;
+    flex-direction: row !important;
+  }
+
+  .list-games .game_item {
+    width: 200px !important;
+    min-width: 200px;
+    height: 150px !important;
+  }
+  .br {
+    display: none;
+  }
+  .ecosystem-text {
+    padding-inline: 1rem;
+  }
+  .ecosystem-text h2 {
+    text-align: center;
+  }
+  .ecosystem-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .button {
+    display: none;
+  }
+  .ecosystem-inner p {
+    text-align: center;
+  }
+  .game-item {
+    padding-inline: 1rem;
+  }
+  .button_game {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .text_news {
+    text-align: center;
+  }
+  .list-news {
+    padding-inline: 1rem;
+  }
+  .item_news_one {
+    margin-bottom: 20px;
+  }
+  .text_item_news_one {
+    background-color: gray;
+    border-radius: 0 0 20px 20px;
+  }
+  .text_item_news_one p {
+    padding-bottom: 10px;
+  }
+  .text_item_news_one h4 {
+    margin: 10px;
+  }
+
+  .img_item_news_one {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .item_news_two {
+    margin-bottom: 20px;
+  }
+  .text_item_news_two {
+    background-color: gray;
+    border-radius: 0 0 20px 20px;
+  }
+  .text_item_news_two p {
+    padding-bottom: 25px;
+  }
+  .text_item_news_two h4 {
+    margin: 10px;
+  }
+
+  .img_item_news_two {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .item_news_three {
+    margin-bottom: 20px;
+  }
+  .text_item_news_three {
+    background-color: gray;
+    border-radius: 0 0 20px 20px;
+  }
+  .text_item_news_three p {
+    padding-bottom: 25px;
+  }
+  .text_item_news_three h4 {
+    margin: 10px;
+  }
+  .img_item_news_three {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .item_news_four {
+    margin-bottom: 20px;
+  }
+  .text_item_news_four {
+    background-color: gray;
+    border-radius: 0 0 20px 20px;
+  }
+  .text_item_news_four p {
+    padding-bottom: 25px;
+  }
+  .text_item_news_four h4 {
+    margin: 10px;
+  }
+
+  .img_item_news_four {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .item_news_five {
+    margin-bottom: 20px;
+  }
+  .text_item_news_five {
+    background-color: gray;
+    border-radius: 0 0 20px 20px;
+  }
+  .text_item_news_five p {
+    padding-bottom: 25px;
+  }
+  .text_item_news_five h4 {
+    margin: 10px;
+  }
+
+  .img_item_news_five {
+    border-radius: 20px 20px 0 0;
+  }
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .from_footer {
+    display: flex;
+  }
+  .from_footer_center {
+    width: 600px;
+    display: flex;
+  }
+
+  .item-news-home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .game-item-ecostystemf {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+  }
+  .newsletter-banner {
+    padding-inline: 3rem;
+  }
+  .menu {
+    display: none;
+  }
+
+  .list-games {
+    padding-inline: 1rem;
+    grid-template-columns: 1fr !important;
+  }
+
+  .list-games .game_card {
+    grid-column: span 1;
+    flex-direction: row !important;
+  }
+
+  .list-games .game_item {
+    width: 200px !important;
+    min-width: 200px;
+    height: 150px !important;
+  }
+  .br {
+    display: none;
+  }
+  .ecosystem-text {
+    padding-inline: 1rem;
+  }
+  .ecosystem-text h2 {
+    text-align: center;
+  }
+  .ecosystem-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .button {
+    display: none;
+  }
+  .ecosystem-inner p {
+    text-align: center;
+  }
+  .game-item {
+    padding-inline: 1rem;
+  }
+  .button_game {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .text_news {
+    text-align: center;
+  }
+  .list-news {
+    padding-inline: 1rem;
+  }
+  .item_news_one {
+    margin-bottom: 20px;
+  }
+  .text_item_news_one {
+    background-color: gray;
+    border-radius: 0 0 20px 20px;
+  }
+  .text_item_news_one p {
+    padding-bottom: 10px;
+  }
+  .text_item_news_one h4 {
+    margin: 10px;
+  }
+
+  .img_item_news_one {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .item_news_two {
+    margin-bottom: 20px;
+  }
+  .text_item_news_two {
+    background-color: gray;
+    border-radius: 0 0 20px 20px;
+  }
+  .text_item_news_two p {
+    padding-bottom: 25px;
+  }
+  .text_item_news_two h4 {
+    margin: 10px;
+  }
+
+  .img_item_news_two {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .item_news_three {
+    margin-bottom: 20px;
+  }
+  .text_item_news_three {
+    background-color: gray;
+    border-radius: 0 0 20px 20px;
+  }
+  .text_item_news_three p {
+    padding-bottom: 25px;
+  }
+  .text_item_news_three h4 {
+    margin: 10px;
+  }
+  .img_item_news_three {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .item_news_four {
+    margin-bottom: 20px;
+  }
+  .text_item_news_four {
+    background-color: gray;
+    border-radius: 0 0 20px 20px;
+  }
+  .text_item_news_four p {
+    padding-bottom: 25px;
+  }
+  .text_item_news_four h4 {
+    margin: 10px;
+  }
+
+  .img_item_news_four {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .item_news_five {
+    margin-bottom: 20px;
+  }
+  .text_item_news_five {
+    background-color: gray;
+    border-radius: 0 0 20px 20px;
+  }
+  .text_item_news_five p {
+    padding-bottom: 25px;
+  }
+  .text_item_news_five h4 {
+    margin: 10px;
+  }
+
+  .img_item_news_five {
+    border-radius: 20px 20px 0 0;
+  }
+}
+/* Mobile */
+@media (max-width: 767.98px) {
+  .item-news-home {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+  }
+  .newsletter-banner {
+    padding-inline: 3rem;
+  }
+  .menu {
+    display: none;
+  }
+
+  .list-games {
+    padding-inline: 1rem;
+    grid-template-columns: 1fr !important;
+  }
+
+  .list-games .game_card {
+    grid-column: span 1;
+    flex-direction: row !important;
+  }
+
+  .list-games .game_item {
+    width: 200px !important;
+    min-width: 200px;
+    height: 150px !important;
+  }
+  .br {
+    display: none;
+  }
+  .ecosystem-text {
+    padding-inline: 1rem;
+  }
+  .ecosystem-text h2 {
+    text-align: center;
+  }
+  .ecosystem-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .button {
+    display: none;
+  }
+  .ecosystem-inner p {
+    text-align: center;
+  }
+  .game-item {
+    padding-inline: 1rem;
+  }
+  .button_game {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .game-item-ecostystemf {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ecosystem-text {
+    padding-inline: 1rem;
+  }
+  .item_news_two {
+    display: flex;
+  }
+  .item_news_three {
+    display: flex;
+  }
+  .item_news_four {
+    display: flex;
+  }
+  .item_news_five {
+    display: flex;
+  }
+  .from_footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .from_footer_center {
+        display: block;
+
+    width: 28rem;
+    max-width: 100%;
+  }
+  .from_footer_center button {
+    width: 26rem;
+    max-width: 100%;
+    margin: 5px;
+  }
+  .from_footer_center input {
+    width: 26rem;
+    max-width: 100%;
+    margin: 5px;
+    
+    box-sizing: border-box;
+  }
+  .newsletter-banner h2 {
+    font-size: 1.5rem;
+  }
+  .newsletter-banner p {
+    font-size: 0.6rem;
+  }
+  .newsletter-banner {
+    margin-bottom: 100px;
+  }
+  .header {
+    padding-inline: 1rem;
+  }
+  .list-games {
+    padding-inline: 1rem;
+  }
+  .ecosystem-text {
+    padding-inline: 1rem;
+  }
+}
+@media (max-width: 484.98px) {
+.dangnhap {
+ display: none;
+}
+}

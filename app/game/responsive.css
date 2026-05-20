@@ -1,0 +1,142 @@
+/* PC */
+@media (min-width: 992px) {
+  .from_footer {
+    display: flex;
+  }
+  .from_footer_center {
+    display: flex;
+  }
+  .game_list_top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .list-games {
+    padding-inline: 1rem;
+  }
+  .list-news {
+    padding-inline: 1rem;
+  }
+  .newsletter-banner {
+    padding-inline: 3rem;
+  }
+  .list_games_three {
+    display: none;
+  }
+  .list-games_item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .menu_game {
+    display: flex;
+  }
+}
+/* Tablet  & Mobile */
+@media (max-width: 991.98px) {
+  .from_footer_center {
+    width: 600px;
+    display: flex;
+  }
+
+ 
+  .game_list_top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .list-games_item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .menu_game {
+    text-align: center;
+  }
+  .menu_game_item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .search_game {
+    width: 100%;
+  }
+  .search_game_input {
+    width: 100%;
+  }
+  .newsletter-banner {
+    padding-inline: 3rem;
+  }
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .list-games_item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .menu_game {
+    text-align: center;
+  }
+  .menu_game_item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .search_game {
+    width: 100%;
+  }
+  .search_game_input {
+    width: 100%;
+  }
+  .newsletter-banner {
+    padding-inline: 3rem;
+  }
+}
+/* Mobile */
+@media (max-width: 767.98px) {
+  
+  .game1 {
+    display: none;
+  }
+  .game3 {
+    display: none;
+  }
+  .game_list_top {
+    display: block;
+  }
+  .game_menu h1 {
+    text-align: center;
+  }
+    .list-games_item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+    .from_footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .from_footer_center {
+            display: block;
+
+    width: 28rem;
+    max-width: 100%;
+  }
+  .from_footer_center button {
+    width: 26rem;
+    max-width: 100%;
+    margin: 5px;
+  }
+  .from_footer_center input {
+    width: 26rem;
+    max-width: 100%;
+    margin: 5px;
+    
+    box-sizing: border-box;
+  }
+  
+}
+@media (max-width: 484.98px) {
+.dangnhap {
+ display: none;
+}
+}

@@ -9,7 +9,7 @@ export default function Footer() {
       relative
       w-full
       mt-48
-      pt-32
+     
       pb-12
       px-6
       bg-[url('/Images/T002.png')]

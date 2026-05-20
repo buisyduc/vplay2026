@@ -3,6 +3,7 @@ import Footer from "@/componencts/layout/Footer";
 import HeroBanner from "@/componencts/nap/HeroBanner";
 import FilterTabs from "@/componencts/nap/FilterTabs";
 import GameGrid from "@/componencts/nap/GameGrid";
+import './responsive.css';
 
 export default function Home() {
   return (

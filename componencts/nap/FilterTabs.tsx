@@ -8,7 +8,7 @@ export default function FilterTabs() {
 
   return (
     <div className="w-full relative z-10 -mt-[140px] pb-6">
-      <div className="max-w-[1000px] mx-auto flex gap-3 px-4 md:px-6">
+      <div className="max-w-[1000px] mx-auto flex gap-3 px-4 md:px-6 overflow-x-auto pb-1 scrollbar-hide">
         {tabs.map((tab, index) => (
           <button
             key={index}

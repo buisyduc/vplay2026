@@ -2,10 +2,13 @@ import Image from "next/image";
 const DetailedNews = () => {
   return (
     <div className="w-full py-12 px-6 max-w-[1100px] mx-auto">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="list_detailed_news">
         <div className="col-span-2 ">
-          <p className="text-xs text-gray-400">
+          <p className="duongdna_pc text-xs text-gray-400">
             Tin tức / Chính tức khai mở Server mới
+          </p>
+          <p className="duongdna_teblet text-xs text-gray-400">
+            Trang chủ / Tin tức / Chính tức khai mở Server mới / Hệ sinh thái
           </p>
           <h2 className="text-3xl font-black">
             Lorem ipsum dolor sit amet consectetur. Malesuada bibendum laoreet
@@ -26,7 +29,7 @@ const DetailedNews = () => {
           <Image
             src="/Images/Rectangle 92.png"
             alt="News Image"
-            width={800}
+            width={1000}
             height={400}
             className="object-cover rounded mt-8"
           />
@@ -48,7 +51,7 @@ const DetailedNews = () => {
           <Image
             src="/Images/Rectangle 92.png"
             alt="News Image"
-            width={800}
+            width={1000}
             height={400}
             className="object-cover rounded mt-8"
           />
@@ -58,7 +61,7 @@ const DetailedNews = () => {
           <Image
             src="/Images/Rectangle 92.png"
             alt="News Image"
-            width={800}
+            width={1000}
             height={400}
             className="object-cover rounded mt-8"
           />
@@ -231,7 +234,11 @@ const DetailedNews = () => {
               </p>
             </div>
           </div>
-          
+          <div className="them_news flex justify-end mt-2 ">
+            <button className="bg-blue-500 hover:bg-blue-400 text-white text-sm font-bold px-2 py-1  transition-colors">
+              XEM THÊM
+            </button>
+          </div>
         </div>
       </div>
     </div>

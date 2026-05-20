@@ -1,12 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 const News = () => {
   return (
     <div className="w-full py-12 px-6">
       <div className="max-w-[800px] mx-auto">
         <div className=" items-center justify-between mt-8 px-2">
           {/* Filter buttons */}
-          <div className="flex gap-2">
-            <button className="text-white text-xs px-4 py-2 rounded border border-blue-500 bg-blue-600/30 hover:bg-blue-600/50">
+          <div className=" menu_news flex gap-2">
+            <button className=" text-white text-xs px-4 py-2 rounded border border-blue-500 bg-blue-600/30 hover:bg-blue-600/50">
               Tất cả (20)
             </button>
             <button className="text-gray-300 text-xs px-4 py-2 rounded border border-gray-600 bg-black/40 hover:border-gray-400 hover:text-white">
@@ -21,16 +22,33 @@ const News = () => {
           </div>
 
           {/* Search */}
-          <div className="relative mt-4">
+          <div className="search_new  flex  relative ">
             <input
               type="text"
               placeholder="Tìm kiếm"
-              className="bg-black/40 border border-gray-600 text-white text-sm placeholder-gray-500 px-4 py-2 pr-10 rounded-full focus:outline-none focus:border-gray-400 w-full"
+              className="search_news_input bg-black/40 border border-gray-400 text-white text-sm placeholder-gray-500 px-4 py-2 pr-10 rounded-full focus:outline-none focus:border-gray-400 "
             />
+            <div className="absolute right-3 top-2.5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </svg>
+            </div>
           </div>
         </div>
+        <Link href="/news/detailednews">
         <div className="grid grid-cols-2 gap-2 mt-4">
-          <div className="relative w-full h-55 rounded overflow-hidden">
+          <div className="relative w-full h-56 rounded overflow-hidden">
             <Image
               src="/Images/Rectangle 92.png"
               alt="Game 1"
@@ -52,8 +70,9 @@ const News = () => {
             <p className="text-gray-500 text-xs mt-6">07/07/2025</p>
           </div>
         </div>
+        </Link>
         <div className="grid grid-cols-2 gap-2 mt-4">
-          <div className="relative w-full h-55 rounded overflow-hidden">
+          <div className="relative w-full h-56 rounded overflow-hidden">
             <Image
               src="/Images/Rectangle21.png"
               alt="Game 1"
@@ -76,7 +95,7 @@ const News = () => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-2 mt-4">
-          <div className="relative w-full h-55 rounded overflow-hidden">
+          <div className="relative w-full h-56 rounded overflow-hidden">
             <Image
               src="/Images/Rectangle19.png"
               alt="Game 1"
@@ -99,7 +118,7 @@ const News = () => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-2 mt-4">
-          <div className="relative w-full h-55 rounded overflow-hidden">
+          <div className="relative w-full h-56 rounded overflow-hidden">
             <Image
               src="/Images/Rectangle 93.png"
               alt="Game 1"
@@ -122,7 +141,7 @@ const News = () => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-2 mt-4">
-          <div className="relative w-full h-55 rounded overflow-hidden">
+          <div className="relative w-full h-56 rounded overflow-hidden">
             <Image
               src="/Images/Rectangle21.png"
               alt="Game 1"
@@ -145,7 +164,7 @@ const News = () => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-2 mt-4">
-          <div className="relative w-full h-55 rounded overflow-hidden">
+          <div className="relative w-full h-56 rounded overflow-hidden">
             <Image
               src="/Images/Rectangle94.png"
               alt="Game 1"
@@ -180,7 +199,7 @@ const News = () => {
               className={`w-8 h-8 text-sm font-semibold rounded ${
                 page === 1
                   ? "bg-blue-600 text-white"
-                  : "bg-[#1a1f2e] text-gray-300 border border-gray-600 hover:border-gray-400 hover:text-white"
+                  : " "
               }`}
             >
               {page}
