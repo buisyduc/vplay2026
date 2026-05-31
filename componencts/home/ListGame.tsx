@@ -2,121 +2,139 @@ import Image from "next/image";
 
 const ListGames = () => {
   return (
-    <div className="list-games  max-w-[1100px] mx-auto">
-      <p className="text-white col-span-3 text-center text-4xl">
-        Danh mục Game
-      </p>
+    <div className="list_game_home">
+      <div className="list-games">
+        <p className="text-white font-bold  text-center text-4xl">
+          Danh mục Game
+        </p>
+        <div className="item_game_home">
+          <div key="mmo" className="game_card  ">
+            <div className="game_image relative w-full h-[300px] flex-shrink-0">
+              <Image
+                src="/Images/Rectangle 26.png"
+                alt="#"
+                fill
+                className=" object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
 
-      <div key="mmo" className="game_card flex flex-col mt-6 ">
-        <div className="game_item relative w-full h-[300px] flex-shrink-0">
-          <Image
-              src="/Images/Rectangle 26.png"
-            alt="#"
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-        </div>
-
-        <div className="bg-zinc-800 px-3 py-4">
-          <h3 className="text-xl font-bold text-white">MMO</h3>
-          <p className="text-gray-400 mt-2">
-            {" "}
-            Lorem ipsum dolor sit amet consectetur. Sem pulvinar id scelerisque
-            erat auctor aliquam non id. Aliquam porta est proin neque id justo
-            diam. Cras sit porttitor orci eget a dui.
-          </p>
-          <div className="flex text-sm text-blue-400 items-center gap-1 mt-2">
-            XEM THÊM
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#5055f9"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
+            <div className="game_text_item ">
+              <h3 className="font-bold text-white">MMO</h3>
+              <p className="text-gray-400">
+               Lorem ipsum dolor sit amet consectetur. Proin eget urna aliquet aliquam amet fermentum nulla. Consectetur egestas.
+              </p>
+              <div className="xemthem_game  flex items-center ">
+                XEM THÊM
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.75 6.75H12.9338"
+                    stroke="#0065FF"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.8418 0.75L12.9337 6.75001L6.8418 12.75"
+                    stroke="#0065FF"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div key="rpg" className="game_card flex flex-col mt-6">
-        <div className="game_item relative w-full h-[300px] flex-shrink-0">
-          <Image
-              src="/Images/Rectangle 26.png"
-            alt="RPG"
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-        </div>
+          <div key="rpg" className="game_card ">
+            <div className="game_image relative w-full h-[300px] flex-shrink-0">
+              <Image
+                src="/Images/Rectangle 26.png"
+                alt="RPG"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
 
-        <div className="bg-zinc-800 px-3 py-4">
-          <h3 className="text-xl font-bold text-white">RPG</h3>
-          <p className="text-gray-400 mt-2">
-            {" "}
-            Lorem ipsum dolor sit amet consectetur. Sem pulvinar id scelerisque
-            erat auctor aliquam non id. Aliquam porta est proin neque id justo
-            diam. Cras sit porttitor orci eget a dui.
-          </p>
-          <div className="flex text-sm text-blue-400 items-center gap-1 mt-2">
-            XEM THÊM
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#5055f9"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
+            <div className="game_text_item  ">
+              <h3 className="font-bold text-white">RPG</h3>
+              <p className="text-gray-400">
+               Lorem ipsum dolor sit amet consectetur. Proin eget urna aliquet aliquam amet fermentum nulla. Consectetur egestas.
+              </p>
+              <div className=" xemthem_game flex items-center ">
+                XEM THÊM
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.75 6.75H12.9338"
+                    stroke="#0065FF"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.8418 0.75L12.9337 6.75001L6.8418 12.75"
+                    stroke="#0065FF"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div key="html5" className="game_card flex flex-col mt-6">
-        <div className="game_item relative w-full h-[300px] flex-shrink-0">
-          <Image
-              src="/Images/Rectangle 26.png"
-            alt="HTML5"
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-        </div>
+          <div key="html5" className="game_card  ">
+            <div className="game_image relative w-full h-[300px] flex-shrink-0">
+              <Image
+                src="/Images/Rectangle 26.png"
+                alt="HTML5"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
 
-        <div className="bg-zinc-800 px-3 py-4">
-          <h3 className="text-xl font-bold text-white">HTML5</h3>
-          <p className="text-gray-400 mt-2">
-            {" "}
-            Lorem ipsum dolor sit amet consectetur. Sem pulvinar id scelerisque
-            erat auctor aliquam non id. Aliquam porta est proin neque id justo
-            diam. Cras sit porttitor orci eget a dui.
-          </p>{" "}
-          <div className="flex text-sm text-blue-400 items-center gap-1 mt-2">
-            XEM THÊM
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#5055f9"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
+            <div className="game_text_item  ">
+              <h3 className=" font-bold text-white">HTML5</h3>
+              <p className="text-gray-400 ">
+               Lorem ipsum dolor sit amet consectetur. Proin eget urna aliquet aliquam amet fermentum nulla. Consectetur egestas.
+              </p>{" "}
+              <div className="xemthem_game flex items-center">
+                XEM THÊM
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.75 6.75H12.9338"
+                    stroke="#0065FF"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.8418 0.75L12.9337 6.75001L6.8418 12.75"
+                    stroke="#0065FF"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>

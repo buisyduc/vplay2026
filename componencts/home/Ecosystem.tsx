@@ -10,8 +10,8 @@ const ListItems = [
 
 const Ecosystem = () => {
   return (
-    <div className="list-ecosystem w-full py-12">
-      <div className="ecosystem-inner max-w-[1100px] mx-auto  gap-6">
+    <div className="list-ecosystem w-full ">
+      <div className="ecosystem-inner   gap-6">
         <div className="ecosystem-text shrink-0 text-white w-full md:w-auto">
           <h2 className="text-2xl md:text-3xl font-bold leading-tight mb-4 text-center md:text-left">
             Khám phá <br className="br" /> Hệ sinh thái
@@ -24,19 +24,19 @@ const Ecosystem = () => {
           </p>
           <div className="button flex justify-center md:justify-start">
             <Link href="/ecosystem">
-              <button className="text-white bg-blue-700 hover:bg-blue-600 transition-all duration-300 px-5 py-2 text-xs font-semibold">
+              <button className="text-white bg-blue-700 hover:bg-blue-600 transition-all duration-300 px-5 py-2 text-xs font-semibold rounded-xs">
                 XEM TẤT CẢ
               </button>
             </Link>
           </div>
         </div>
 
-        {/* Right: Cards */}
-        <div className="game-item-ecostystemf ">
+
+        <div className="game-item-ecostystemf grid grid-cols-4 gap-3">
           {ListItems.map((item) => (
             <div
               key={item.id}
-              className="relative rounded-xl overflow-hidden min-w-[150px] flex-1 aspect-[3/4] cursor-pointer group"
+              className="relative rounded-xl overflow-hidden  flex-1 aspect-[3/4] cursor-pointer group"
             >
               <Image
                 src={item.thumbnail}
@@ -51,18 +51,39 @@ const Ecosystem = () => {
                 <span className="text-sm font-bold tracking-wide mb-8">
                   {item.code}
                 </span>
-                <span className="text-lg font-bold mt-4">→</span>
+                <span className="text-lg font-bold mt-4">
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 9.19336H17.6377"
+                      stroke="#AFAFAF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.31836 1L17.6372 9.19335L9.31836 17.3867"
+                      stroke="#AFAFAF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="button_game">
-         <Link href="/ecosystem">
-          <button className=" lg:hidden shrink-0 border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-300 px-5 py-2 text-sm font-semibold rounded">
-            Xem tất cả
-          </button>
-        </Link>
+        <div className="button_game">
+          <Link href="/ecosystem">
+              XEM TẤT CẢ
+          </Link>
       </div>
     </div>
   );

@@ -1,16 +1,57 @@
 /* PC */
 @media (min-width: 992px) {
+  .list_games_menu {
+    max-width: 1320px;
+    margin: auto;
+  }
+  .game_menu {
+    margin-top: 64px;
+  }
+  .game_menu h1 {
+    margin-bottom: 24px;
+  }
+  .game_list_top {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .game_list_top > div {
+    flex: 1;
+  }
+  .game1 {
+    background: linear-gradient(
+      227deg,
+      rgba(0, 101, 255, 0.8) -8.7%,
+      rgba(10, 15, 25, 0.8) 32.22%,
+      rgba(10, 15, 25, 0.8) 70.41%,
+      rgba(0, 101, 255, 0.8) 114.41%
+    );
+  }
+  .container_home{
+    padding-bottom: 100px;
+  }
+  .text_ngan {
+    display: none;
+  }
+   .text_bannermain {
+    color: #0065ff;
+  }
+
+  .text_bannermain button {
+    border: 1px solid #0065ff;
+    border-radius: 4px;
+    padding: 4px 6px 4px 6px;
+  }
+  
   .from_footer {
     display: flex;
   }
   .from_footer_center {
     display: flex;
   }
-  .game_list_top {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
+
   .list-games {
     padding-inline: 1rem;
   }
@@ -26,32 +67,82 @@
   .list-games_item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 12px;
+    margin-bottom: 40px;
   }
   .menu_game {
     display: flex;
+    margin-bottom: 40px;
   }
 }
 /* Tablet  & Mobile */
 @media (max-width: 991.98px) {
+     .game_list_top {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding-bottom: 12px;
+    margin-bottom: 60px;
+    padding-inline: 1rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .game_list_top::-webkit-scrollbar {
+    display: none;
+  }
+  .text_dai {
+    display: none;
+  }
+
+  .game_list_top > div {
+    flex: 0 0 55%;   /* nhỏ hơn để thấy card bên cạnh */
+    scroll-snap-align: center;  /* snap vào giữa */
+    min-width: 0;
+  }
+    .game_menu {
+    margin-top: 50px;
+  }
+    .game_menu h1 {
+    margin-bottom: 24px;
+  }
+   .container_home{
+    padding-bottom: 80px;
+  }
+     .text_bannermain {
+    color: #0065ff;
+  }
+
+  .text_bannermain button {
+    border: 1px solid #0065ff;
+    border-radius: 4px;
+    padding: 4px 6px 4px 6px;
+  }
+
+
+
+
   .from_footer_center {
     width: 600px;
     display: flex;
   }
-
- 
-  .game_list_top {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+  .xemthem_game {
+    display: none;
   }
+
+  
   .list-games_item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 16px;
+    margin-bottom: 60px ;
   }
   .menu_game {
     text-align: center;
+    padding-bottom: 24px;
   }
   .menu_game_item {
     padding-top: 10px;
@@ -68,55 +159,38 @@
   }
 }
 /* Tablet */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .list-games_item {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  .menu_game {
-    text-align: center;
-  }
-  .menu_game_item {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .search_game {
-    width: 100%;
-  }
-  .search_game_input {
-    width: 100%;
-  }
-  .newsletter-banner {
-    padding-inline: 3rem;
-  }
-}
+
 /* Mobile */
 @media (max-width: 767.98px) {
-  
-  .game1 {
-    display: none;
+     .header {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
-  .game3 {
-    display: none;
+      .text_bannermain {
+    display: flex;
+    flex-direction: row;
   }
-  .game_list_top {
-    display: block;
+     .game_list_top > div {
+    flex: 0 0 70%;
+    scroll-snap-align: center;
   }
+
+ 
   .game_menu h1 {
     text-align: center;
   }
-    .list-games_item {
+  .list-games_item {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
+    gap: 16px;
   }
-    .from_footer {
+  .from_footer {
     display: flex;
     flex-direction: column;
   }
   .from_footer_center {
-            display: block;
+    display: block;
 
     width: 28rem;
     max-width: 100%;
@@ -130,13 +204,7 @@
     width: 26rem;
     max-width: 100%;
     margin: 5px;
-    
+
     box-sizing: border-box;
-  }
-  
-}
-@media (max-width: 484.98px) {
-.dangnhap {
- display: none;
-}
+  } 
 }

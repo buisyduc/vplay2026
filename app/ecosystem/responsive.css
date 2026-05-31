@@ -15,9 +15,40 @@
     grid-template-columns: repeat(4, 1fr);
     
   }
+   .container_home{
+    padding-bottom: 80px;
+  }
+     .text_bannermain {
+    color: #0065ff;
+  }
+
+  .text_bannermain button {
+    border: 1px solid #0065ff;
+    border-radius: 4px;
+    padding: 4px 6px 4px 6px;
+  }
+   .text_ngan {
+    display: none;
+  }
+
 }
 /* Tablet  & Mobile */
 @media (max-width: 991.98px) {
+     .container_home{
+    padding-bottom: 80px;
+  }
+     .text_bannermain {
+    color: #0065ff;
+  }
+
+  .text_bannermain button {
+    border: 1px solid #0065ff;
+    border-radius: 4px;
+    padding: 4px 6px 4px 6px;
+  }
+   .text_dai {
+    display: none;
+  }
      .from_footer {
     display: flex;
   }
@@ -38,18 +69,35 @@
  
 }
 /* Tablet */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .newsletter-banner {
-    padding-inline: 3rem;
-  }
-   .list_ecosystem_menu{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    
-  }
-}
+
 /* Mobile */
 @media (max-width: 767.98px) {
+   html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+    * {
+    box-sizing: border-box;
+  }
+
+  /* Fix ecosystem page */
+  .w-full.py-12 {
+    padding-inline: 1rem;
+  }
+
+  .max-w-\[1100px\] {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Fix header tràn */
+  header {
+    width: 100vw;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  
+
    .from_footer {
     display: flex;
     flex-direction: column;
@@ -76,9 +124,9 @@
     grid-template-columns: repeat(2, 1fr);
     
   }
-}
-@media (max-width: 484.98px) {
-  .dangnhap {
-    display: none;
+      .header {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
 }

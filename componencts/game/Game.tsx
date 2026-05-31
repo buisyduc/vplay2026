@@ -1,14 +1,32 @@
+"use client";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 const Game = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const centerScroll = () => {
+      if (scrollRef.current && window.innerWidth <= 991.98) {
+        const container = scrollRef.current;
+        container.scrollLeft = (container.scrollWidth - container.clientWidth) / 2;
+      }
+    };
+
+    // Cuộn ra giữa ngay khi load
+    centerScroll();
+
+    // Lắng nghe sự kiện resize để giữ ở giữa khi xoay màn hình/co giãn
+    window.addEventListener("resize", centerScroll);
+    return () => window.removeEventListener("resize", centerScroll);
+  }, []);
+
   return (
-    <div className="w-full py-12 px-6">
-      <div className="game_menu max-w-[1100px] mx-auto">
+    <div className="list_games_menu w-full p px-6">
+      <div className="game_menu">
         <h1 className="text-4xl">Mới phát hành & Sắp ra mắt</h1>
-        <div className="game_list_top">
-          <div className="game1 relative overflow-hidden rounded-2xl bg-[#050816] p-4">
-            <div className="absolute -right-0 top-0 w-30 h-20 bg-[#0037ff] blur-3xl rounded-full" />
-            <div className="absolute -left-0 bottom-0 w-30 h-20 bg-[#0037ff] blur-3xl rounded-full" />
+        <div className="game_list_top" ref={scrollRef}>
+          <div className="game1 relative overflow-hidden rounded-lg bg-[#050816] p-4">
 
             <p>Quần Anh Phong Hoa Lục</p>
             <p className="inline-flex items-center gap-1 bg-gray-500 text-white text-xs  px-2 py-1 rounded w-fit">
@@ -32,7 +50,7 @@ const Game = () => {
                 RELEASE
               </div>
             </div>
-            <div className="game2 grid grid-cols-2 mt-2 gap-2">
+            <div className="game1 grid grid-cols-2 mt-2 gap-2">
               <button className="flex items-center justify-center gap-1.5 bg-[#2e3448]  hover:bg-[#3a4060]  rounded-sm text-white text-xs font-semibold py-2.5 transition-colors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -71,10 +89,7 @@ const Game = () => {
               </button>
             </div>
           </div>
-          <div className="game2 relative overflow-hidden rounded-2xl bg-[#050816] p-4">
-            <div className="absolute -right-0 top-0 w-30 h-20 bg-[#0037ff] blur-3xl rounded-full" />
-            <div className="absolute -left-0 bottom-0 w-30 h-20 bg-[#0037ff] blur-3xl rounded-full" />
-
+          <div className="game1 relative overflow-hidden rounded-lg bg-[#050816] p-4">
             <p>Quần Anh Phong Hoa Lục</p>
             <p className="inline-flex items-center gap-1 bg-gray-500 text-white text-xs  px-2 py-1 rounded w-fit">
               MOMO
@@ -136,10 +151,7 @@ const Game = () => {
               </button>
             </div>
           </div>
-          <div className="game3 relative overflow-hidden rounded-2xl bg-[#050816] p-4">
-            <div className="absolute -right-0 top-0 w-30 h-20 bg-[#0037ff] blur-3xl rounded-full" />
-            <div className="absolute -left-0 bottom-0 w-30 h-20 bg-[#0037ff] blur-3xl rounded-full" />
-
+          <div className="game1 relative overflow-hidden rounded-lg bg-[#050816] p-4">
             <p>Quần Anh Phong Hoa Lục</p>
             <p className="inline-flex items-center gap-1 bg-gray-500 text-white text-xs  px-2 py-1 rounded w-fit">
               MOMO
@@ -202,9 +214,9 @@ const Game = () => {
             </div>
           </div>
         </div>
-        <div className="menu_game items-center justify-between mt-8 px-2">
+        <div className="menu_game items-center justify-between  px-2">
           {/* Filter buttons */}
-          <div className="menu_game_item flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
+          <div className="menu_game_item flex flex-wrap gap-2 pb-1 ">
             <button className="text-white text-xs px-4 py-2 rounded border border-blue-500 bg-blue-600/30 hover:bg-blue-600/50">
               Tất cả (20)
             </button>
@@ -245,7 +257,7 @@ const Game = () => {
           </div>
         </div>
         <div className="list-games_item">
-          <div className=" overflow-hidden rounded-2xl bg-[#050816] p-4">
+          <div className=" overflow-hidden rounded-lg bg-[#050816] p-4">
             <p>Quần Anh Phong Hoa Lục</p>
             <p className="inline-flex items-center gap-1 bg-gray-500 text-white text-xs  px-2 py-1 rounded w-fit">
               MOMO
@@ -307,7 +319,7 @@ const Game = () => {
               </button>
             </div>
           </div>
-          <div className=" overflow-hidden rounded-2xl bg-[#050816] p-4">
+          <div className=" overflow-hidden rounded-lg bg-[#050816] p-4">
             <p>Quần Anh Phong Hoa Lục</p>
             <p className="inline-flex items-center gap-1 bg-gray-500 text-white text-xs  px-2 py-1 rounded w-fit">
               MOMO
@@ -369,7 +381,7 @@ const Game = () => {
               </button>
             </div>
           </div>
-          <div className=" overflow-hidden rounded-2xl bg-[#050816] p-4">
+          <div className=" overflow-hidden rounded-lg bg-[#050816] p-4">
             <p>Quần Anh Phong Hoa Lục</p>
             <p className="inline-flex items-center gap-1 bg-gray-500 text-white text-xs  px-2 py-1 rounded w-fit">
               MOMO
@@ -431,7 +443,7 @@ const Game = () => {
               </button>
             </div>
           </div>
-          <div className=" overflow-hidden rounded-2xl bg-[#050816] p-4">
+          <div className=" overflow-hidden rounded-lg bg-[#050816] p-4">
             <p>Quần Anh Phong Hoa Lục</p>
             <p className="inline-flex items-center gap-1 bg-gray-500 text-white text-xs  px-2 py-1 rounded w-fit">
               MOMO
@@ -493,7 +505,7 @@ const Game = () => {
               </button>
             </div>
           </div>
-          <div className=" overflow-hidden rounded-2xl bg-[#050816] p-4">
+          <div className=" overflow-hidden rounded-lg bg-[#050816] p-4">
             <p>Quần Anh Phong Hoa Lục</p>
             <p className="inline-flex items-center gap-1 bg-gray-500 text-white text-xs  px-2 py-1 rounded w-fit">
               MOMO
@@ -555,7 +567,7 @@ const Game = () => {
               </button>
             </div>
           </div>
-          <div className=" overflow-hidden rounded-2xl bg-[#050816] p-4">
+          <div className=" overflow-hidden rounded-lg bg-[#050816] p-4">
             <p>Quần Anh Phong Hoa Lục</p>
             <p className="inline-flex items-center gap-1 bg-gray-500 text-white text-xs  px-2 py-1 rounded w-fit">
               MOMO
@@ -618,9 +630,9 @@ const Game = () => {
             </div>
           </div>
         </div>
-        
 
-        <div className="flex justify-center mt-6 ">
+
+        <div className="xemthem_game flex justify-center ">
           <button className="bg-blue-500 hover:bg-blue-400 text-white text-sm font-bold px-2 py-1  transition-colors">
             XEM THÊM
           </button>

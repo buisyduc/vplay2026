@@ -20,7 +20,7 @@ const games = [
 
 const GameGrid = () => {
   return (
-    <section className="relative w-full pb-32 pt-1">
+    <section className="relative w-full">
       <div 
         className="absolute inset-0 bg-[#0b0f19] bg-[url('/Images/bg2.png')] bg-cover bg-center pointer-events-none z-0"
         style={{

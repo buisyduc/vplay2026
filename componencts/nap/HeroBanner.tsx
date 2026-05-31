@@ -7,7 +7,7 @@ const HeroBanner = () => {
 
 
   return (
-    <section className="relative w-full h-[480px] md:h-[560px] ">
+    <section className="heroBanner relative w-full h-[480px] md:h-[560px] ">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

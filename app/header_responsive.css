@@ -1,0 +1,21 @@
+/* PC */
+@media (min-width: 992px) {
+    .languages_header{
+        width: 240px;
+        height: 192px;
+       
+    }
+
+}
+/* Tablet  & Mobile */
+@media (max-width: 991.98px) {
+  
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+ 
+}
+/* Mobile */
+@media (max-width: 767.98px) {
+ 
+}

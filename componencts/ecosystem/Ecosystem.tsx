@@ -12,8 +12,8 @@ const ListItems = [
 
 const Ecosystem = () => {
   return (
-    <div className="w-full py-12 px-6">
-      <div className="max-w-[1100px] mx-auto">
+<div className="w-full py-12 px-4 overflow-hidden box-border">
+  <div className="w-full max-w-[1100px] mx-auto overflow-hidden">
         <div className="flex items-center gap-2 mb-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,30 @@ const Ecosystem = () => {
                 <span className="text-sm font-bold tracking-wide mb-8">
                   {item.code}
                 </span>
-                <span className="text-lg font-bold mt-4">→</span>
+                <span className="text-lg font-bold mt-4">
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 9.19336H17.6377"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.31836 1L17.6372 9.19335L9.31836 17.3867"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
               </div>
             </div>
           ))}

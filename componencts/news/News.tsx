@@ -4,7 +4,7 @@ const News = () => {
   return (
     <div className="w-full py-12 px-6">
       <div className="max-w-[800px] mx-auto">
-        <div className=" items-center justify-between mt-8 px-2">
+        <div className=" items-center justify-between ">
           {/* Filter buttons */}
           <div className=" menu_news flex gap-2">
             <button className=" text-white text-xs px-4 py-2 rounded border border-blue-500 bg-blue-600/30 hover:bg-blue-600/50">

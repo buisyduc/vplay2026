@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
 
       <main>
-        <div className="relative flex-1 flex flex-col">
+        <div className="container_home relative flex-1 flex flex-col">
           <div
             className="absolute inset-0 bg-[#0b0f19] bg-[url('/Images/bg/bgbackground.png')] bg-cover bg-center pointer-events-none z-0"
             style={{
