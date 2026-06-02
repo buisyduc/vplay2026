@@ -13,6 +13,9 @@
   }
    .container_home {
     padding-bottom: 160px;
+    background: url(/images/bg/bg_Mobile.webp) no-repeat top;
+     background-size: cover;
+     background-attachment: fixed;
   }
 
 
@@ -29,6 +32,9 @@
   }
  .container_home {
     padding-bottom: 120px;
+    background: url(/images/bg/bg_Mobile.webp) no-repeat top;
+     background-size: cover;
+     background-attachment: fixed;
   }
   
   .them_news button{
