@@ -16,7 +16,6 @@ export default function Home() {
     <div className=" min-h-screen flex flex-col overflow-x-hidden">
       <Header />
       <main className="">
-        {/* <Banner /> */}
         <div className="container_home">
           <ListItem />
           <ListGames />
