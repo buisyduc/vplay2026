@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, EffectFade, Controller } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
@@ -24,23 +23,64 @@ interface ListBannerItem {
 const ListItems: ListItem[] = [
   { id: 1, thumbnail: "/Images/iconbanner/appicon-20260507-072221.png" },
   { id: 2, thumbnail: "/Images/iconbanner/quy-mon-quan-20260330-024523.png" },
-  { id: 3, thumbnail: "/Images/iconbanner/t026-iconapp512-20260414-021558.png" },
+  {
+    id: 3,
+    thumbnail: "/Images/iconbanner/t026-iconapp512-20260414-021558.png"
+  },
   { id: 4, thumbnail: "/Images/iconbanner/iconapp512-1-20260528-070412.png" },
-  { id: 5, thumbnail: "/Images/iconbanner/t027-2-iconapp512-20260422-023512.png" },
-  { id: 6, thumbnail: "/Images/iconbanner/thao-tung-tam-quoc-20260327-090323.png" },
+  {
+    id: 5,
+    thumbnail: "/Images/iconbanner/t027-2-iconapp512-20260422-023512.png"
+  },
+  {
+    id: 6,
+    thumbnail: "/Images/iconbanner/thao-tung-tam-quoc-20260327-090323.png"
+  },
   { id: 7, thumbnail: "/Images/iconbanner/thoikhong-20260330-024750.png" },
   { id: 8, thumbnail: "/Images/iconbanner/512-bo-vien-20260328-043547.png" }
 ];
 
 const ListBanner: ListBannerItem[] = [
-  { id: 1, alt: "Chiến Samkok - Hốc Ngàn Vé Quay", thumbnail: "/Images/Banner/1-1920x805-20260328-043558.png" },
-  { id: 2, alt: "Một chạm đổi tướng - Tốc chiến định giang sơn", thumbnail: "/Images/Banner/r05-1920x805-20260327-103334.png" },
-  { id: 3, alt: "Game Kinh Dị Giữa Lòng Đô Thị", thumbnail: "/Images/Banner/r15-1920x805-20260330-024541.png" },
-  { id: 4, alt: "Minh Chủ Võ Lâm - Tuyệt Đỉnh Kim Dung", thumbnail: "/Images/Banner/t30-1920x805-20260507-072240.png" },
-  { id: 5, alt: "Nhập Vai Chấn Động - Thỏa Mộng Game Mơ", thumbnail: "/Images/Banner/bannerhome.png" },
-  { id: 6, alt: "Nhập Vai Chấn Động - Thỏa Mộng Game Mơ", thumbnail: "/Images/Banner/t22-1920x805-20260330-024818.png" },
-  { id: 7, alt: "Nhập Vai Chấn Động - Thỏa Mộng Game Mơ", thumbnail: "/Images/Banner/1-1920x805-1-20260327-130434.jpg" },
-  { id: 8, alt: "Nhập Vai Chấn Động - Thỏa Mộng Game Mơ", thumbnail: "/Images/Banner/pc-1920x805-2-20260327-104042.jpg" }
+  {
+    id: 1,
+    alt: "Chiến Samkok - Hốc Ngàn Vé Quay",
+    thumbnail: "/Images/Banner/1-1920x805-20260328-043558.png"
+  },
+  {
+    id: 2,
+    alt: "Một chạm đổi tướng - Tốc chiến định giang sơn",
+    thumbnail: "/Images/Banner/r05-1920x805-20260327-103334.png"
+  },
+  {
+    id: 3,
+    alt: "Game Kinh Dị Giữa Lòng Đô Thị",
+    thumbnail: "/Images/Banner/r15-1920x805-20260330-024541.png"
+  },
+  {
+    id: 4,
+    alt: "Minh Chủ Võ Lâm - Tuyệt Đỉnh Kim Dung",
+    thumbnail: "/Images/Banner/t30-1920x805-20260507-072240.png"
+  },
+  {
+    id: 5,
+    alt: "Nhập Vai Chấn Động - Thỏa Mộng Game Mơ",
+    thumbnail: "/Images/Banner/bannerhome.png"
+  },
+  {
+    id: 6,
+    alt: "Nhập Vai Chấn Động - Thỏa Mộng Game Mơ",
+    thumbnail: "/Images/Banner/t22-1920x805-20260330-024818.png"
+  },
+  {
+    id: 7,
+    alt: "Nhập Vai Chấn Động - Thỏa Mộng Game Mơ",
+    thumbnail: "/Images/Banner/1-1920x805-1-20260327-130434.jpg"
+  },
+  {
+    id: 8,
+    alt: "Nhập Vai Chấn Động - Thỏa Mộng Game Mơ",
+    thumbnail: "/Images/Banner/pc-1920x805-2-20260327-104042.jpg"
+  }
 ];
 
 const Slider: React.FC = () => {
@@ -52,20 +92,26 @@ const Slider: React.FC = () => {
   const slidesKey = ListItems.map((s) => s.id).join(",");
 
   useEffect(() => {
-    setIsMounted(true);
+    const timer = setTimeout(() => setIsMounted(true), 0);
+    return () => clearTimeout(timer);
   }, []);
 
   if (!isMounted) {
     return (
       <div className="slider" style={{ width: "100vw", height: "100vh" }}>
-        <div className="slider-wrapper" style={{ background: "#0B0C10", width: "100%", height: "100%" }} />
+        <div
+          className="slider-wrapper"
+          style={{ background: "#0B0C10", width: "100%", height: "100%" }}
+        />
       </div>
     );
   }
 
   return (
-    <div className="slider" style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
-      
+    <div
+      className="slider"
+      style={{ width: "100vw", height: "100vh", overflow: "hidden" }}
+    >
       <style jsx global>{`
         /* 1. KHU VỰC NÚT ĐIỀU HƯỚNG GỐC */
         .main-slider .swiper-button-next,
@@ -76,17 +122,21 @@ const Slider: React.FC = () => {
           backdrop-filter: blur(6px);
           -webkit-backdrop-filter: blur(6px);
           border-radius: 50% !important;
-          
+
           /* Triệt tiêu màu xanh cốt lõi từ thư viện Swiper */
-          color: transparent !important; 
-          
-          opacity: 0; 
+          color: transparent !important;
+
+          opacity: 0;
           visibility: hidden;
-          transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.2s ease, transform 0.2s ease !important;
+          transition:
+            opacity 0.3s ease,
+            visibility 0.3s ease,
+            background-color 0.2s ease,
+            transform 0.2s ease !important;
           z-index: 15 !important;
-          
+
           margin-top: 0 !important;
-          top: calc(50% - 22px) !important; 
+          top: calc(50% - 22px) !important;
         }
 
         /* 2. HOVER BANNER -> HIỆN NÚT TRẮNG */
@@ -100,7 +150,7 @@ const Slider: React.FC = () => {
         .main-slider .swiper-button-next:hover,
         .main-slider .swiper-button-prev:hover {
           background-color: rgba(255, 255, 255, 0.32) !important;
-          transform: scale(1.15) !important; 
+          transform: scale(1.15) !important;
         }
 
         /* 4. ĐÈ XOÁ HOÀN TOÀN ICON MÀU XANH (FONT-GỐC) CỦA SWIPER MÀ BẠN ĐANG BỊ */
@@ -115,7 +165,7 @@ const Slider: React.FC = () => {
         /* 5. TỰ DỰNG LẠI MŨI TÊN MẢNH MÀU TRẮNG THEO ĐÚNG HÌNH THIẾT KẾ */
         .main-slider .swiper-button-next::before,
         .main-slider .swiper-button-prev::before {
-          content: '' !important;
+          content: "" !important;
           display: block;
           width: 11px;
           height: 11px;
@@ -150,8 +200,10 @@ const Slider: React.FC = () => {
         }
       `}</style>
 
-      <div className="slider-wrapper" style={{ position: "relative", width: "100%", height: "100%" }}>
-        
+      <div
+        className="slider-wrapper"
+        style={{ position: "relative", width: "100%", height: "100%" }}
+      >
         {/* 1. MAIN SWIPER (BANNER LỚN FULL MÀN HÌNH) */}
         <Swiper
           key={`main-${slidesKey}`}
@@ -179,10 +231,18 @@ const Slider: React.FC = () => {
           }}
         >
           {ListBanner.map((item) => (
-            <SwiperSlide key={item.id} style={{ width: "100%", height: "100%" }}>
-              <div className="slider-slide" style={{ position: "relative", width: "100%", height: "100%" }}>
-                
-                <div className="slider-background" style={{ width: "100%", height: "100%" }}>
+            <SwiperSlide
+              key={item.id}
+              style={{ width: "100%", height: "100%" }}
+            >
+              <div
+                className="slider-slide"
+                style={{ position: "relative", width: "100%", height: "100%" }}
+              >
+                <div
+                  className="slider-background"
+                  style={{ width: "100%", height: "100%" }}
+                >
                   <img
                     src={item.thumbnail}
                     alt={item.alt}
@@ -190,8 +250,8 @@ const Slider: React.FC = () => {
                     style={{
                       width: "100%",
                       height: "100%",
-                      objectFit: "cover", 
-                      objectPosition: "center top" 
+                      objectFit: "cover",
+                      objectPosition: "center top"
                     }}
                   />
                 </div>
@@ -206,37 +266,46 @@ const Slider: React.FC = () => {
                     bottom: "-20px",
                     height: "54%",
                     opacity: 1,
-                    zIndex: 1, 
-                    background: "linear-gradient(0deg, #0b0c10 15.36%, rgba(11, 12, 16, .948131) 23.43%, rgba(11, 12, 16, .895542) 27.56%, rgba(11, 12, 16, .9) 32.18%, rgba(11, 12, 16, .6) 64.81%, rgba(11, 12, 16, 0) 81.25%)"
+                    zIndex: 1,
+                    background:
+                      "linear-gradient(0deg, #0b0c10 15.36%, rgba(11, 12, 16, .948131) 23.43%, rgba(11, 12, 16, .895542) 27.56%, rgba(11, 12, 16, .9) 32.18%, rgba(11, 12, 16, .6) 64.81%, rgba(11, 12, 16, 0) 81.25%)"
                   }}
                 />
 
                 {/* Content Text & Button */}
-                <div 
+                <div
                   className="slider-content"
                   style={{
                     position: "absolute",
-                    top: "60%",                  
+                    top: "60%",
                     left: "50%",
-                    transform: "translateX(-50%)", 
-                    zIndex: 6,                   
+                    transform: "translateX(-50%)",
+                    zIndex: 6,
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
                     width: "100%",
-                    maxWidth: "800px", 
+                    maxWidth: "800px",
                     padding: "0 20px"
                   }}
                 >
                   <div className="slider-text" style={{ marginBottom: "20px" }}>
-                    <h2 style={{ color: "#ffffff", fontSize: "1.25rem", fontWeight: "bold", textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}>
+                    <h2
+                      style={{
+                        color: "#ffffff",
+                        fontSize: "1.25rem",
+                        fontWeight: "bold",
+                        textShadow: "0 2px 10px rgba(0,0,0,0.8)"
+                      }}
+                    >
                       {item.alt}
                     </h2>
                   </div>
                   <div className="actions d-flex gap-3 justify-content-center">
-                    <button className="btn btn-primary" 
-                      style={{ 
-                        padding: "10px 30px", 
+                    <button
+                      className="btn btn-primary"
+                      style={{
+                        padding: "10px 30px",
                         fontWeight: "bold",
                         background: "#0065FF",
                         borderRadius: "4px",
@@ -247,7 +316,6 @@ const Slider: React.FC = () => {
                     </button>
                   </div>
                 </div>
-
               </div>
             </SwiperSlide>
           ))}
@@ -257,12 +325,12 @@ const Slider: React.FC = () => {
         <div
           className="slider-sub"
           style={{
-            position: "absolute",      
-            bottom: "30px",            
+            position: "absolute",
+            bottom: "30px",
             left: "50%",
             transform: "translateX(-50%)",
-            zIndex: 10,                
-            maxWidth: "600px", 
+            zIndex: 10,
+            maxWidth: "600px",
             width: "100%",
             boxSizing: "border-box"
           }}
@@ -284,7 +352,7 @@ const Slider: React.FC = () => {
             className="slider-thumb"
             style={{
               overflowX: "hidden",
-              overflowY: "visible", 
+              overflowY: "visible",
               padding: "15px 0"
             }}
             onSlideChange={(swiper) => {
@@ -303,28 +371,26 @@ const Slider: React.FC = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  overflow: "visible" 
+                  overflow: "visible"
                 }}
               >
                 {({ isActive }) => (
                   <div
-                    id = "thumb-item"
+                    id="thumb-item"
                     className={`thumb-item ${isActive ? "active" : ""}`}
                     style={{
-                    
                       width: "100px",
-                  
-                      borderRadius: "16px", 
+
+                      borderRadius: "16px",
                       overflow: "hidden",
                       isolation: "isolate",
-                      transition: "transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease, box-shadow 0.3s ease",
+                      transition:
+                        "transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease, box-shadow 0.3s ease",
                       border: isActive
                         ? "3px solid #ffffff"
                         : "2px solid rgba(255, 255, 255, 0.25)",
                       transform: isActive ? "scale(1.25)" : "scale(1)",
                       zIndex: isActive ? 10 : 1
-                      
-
                     }}
                   >
                     <img
@@ -348,7 +414,6 @@ const Slider: React.FC = () => {
             ))}
           </Swiper>
         </div>
-
       </div>
     </div>
   );
