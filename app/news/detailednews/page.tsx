@@ -1,6 +1,6 @@
-import Header from "@/componencts/layout/Header";
-import Footer from "@/componencts/layout/Footer";
-import DetailedNews from "@/componencts/detailednews/DetailedNews";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import DetailedNews from "@/components/detailednews/DetailedNews";
 import './responsive.css';
 
 export default function Home() {

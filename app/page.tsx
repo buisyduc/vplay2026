@@ -1,11 +1,10 @@
-import Header from "@/componencts/layout/Header";
-import Footer from "@/componencts/layout/Footer";
-import Banner from "@/componencts/home/Banner";
-import ListItem from "@/componencts/home/ListItem";
-import ListGames from "@/componencts/home/ListGame";
-import Ecosystem from "@/componencts/home/Ecosystem";
-import BannerMain from "@/componencts/home/BannerMain";
-import ListNews from "@/componencts/home/ListNews";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import ListItem from "@/components/home/ListItem";
+import ListGames from "@/components/home/ListGame";
+import Ecosystem from "@/components/home/Ecosystem";
+import BannerMain from "@/components/home/BannerMain";
+import ListNews from "@/components/home/ListNews";
 import "./responsive.css";
 import "./header_responsive.css";
 // import FilterTabs from "@/componencts/home/FilterTabs";

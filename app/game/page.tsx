@@ -1,8 +1,8 @@
-import Header from "@/componencts/layout/Header";
-import Footer from "@/componencts/layout/Footer";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
-import BannerMain from "@/componencts/home/BannerMain";
-import Game from "@/componencts/game/Game";
+import BannerMain from "@/components/home/BannerMain";
+import Game from "@/components/game/Game";
 import './responsive.css';
 
 export default function Home() {

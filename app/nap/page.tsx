@@ -1,9 +1,9 @@
-import Header from "@/componencts/layout/Header";
-import Footer from "@/componencts/layout/Footer";
-import HeroBanner from "@/componencts/nap/HeroBanner";
-import FilterTabs from "@/componencts/nap/FilterTabs";
-import GameGrid from "@/componencts/nap/GameGrid";
-import BannerMain from "@/componencts/home/BannerMain";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import HeroBanner from "@/components/nap/HeroBanner";
+import FilterTabs from "@/components/nap/FilterTabs";
+import GameGrid from "@/components/nap/GameGrid";
+import BannerMain from "@/components/home/BannerMain";
 import './responsive.css';
 
 export default function Home() {

@@ -1,8 +1,8 @@
-import Header from "@/componencts/layout/Header";
-import Footer from "@/componencts/layout/Footer";
-import BannerMain from "@/componencts/home/BannerMain";
-import News from "@/componencts/news/News";
-import ListNews from "@/componencts/home/ListNews";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import BannerMain from "@/components/home/BannerMain";
+import News from "@/components/news/News";
+import ListNews from "@/components/home/ListNews";
 import './responsive.css';
 
 export default function Home() {
