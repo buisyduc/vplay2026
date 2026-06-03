@@ -4,14 +4,38 @@ export default function NewsletterBanner() {
       <div
         className="w-full rounded-[8px] p-6 md:p-10 flex flex-col items-center text-center gap-4"
         style={{
-          background: "rgba(52, 39, 245, 0.37)",
+    
+          background: "url(/Images/bg/form-bg.webp) no-repeat",
           backdropFilter: "blur(16px)",
+          backgroundSize: "cover",
           WebkitBackdropFilter: "blur(16px)",
           border: "1px solid rgba(255,255,255,0.2)"
         }}
       >
-        <h2 className="text-white text-3xl md:text-4xl font-bold">Đăng ký nhận bản tin</h2>
-        <p className="text-blue-100 text-sm max-w-4xl leading-relaxed mb-4">
+        <h2 className="text-white text-3xl md:text-4xl font-bold"
+            style={{
+              fontSize: "42px",
+              fontFamily: "Manrope",
+              fontWeight: 800,
+              lineHeight: "50px",
+              letterSpacing: "0%",
+              color: "#fafaf9",
+              fontStyle: "ExtraBold",
+            
+          }}  
+        >Đăng ký nhận bản tin</h2>
+        <p className="text-blue-100 text-sm max-w-4xl leading-relaxed mb-4"
+             style={{
+              fontSize: "16px",
+              fontFamily: "Manrope",
+              fontWeight: 400,
+              lineHeight: "22px",
+              letterSpacing: "0%",
+              color: "#fafaf9",
+              fontStyle: "ExtraBold",
+            
+          }}  
+        >
           Lorem ipsum dolor sit amet consectetur. Vel vivamus adipiscing in
           pretium molestie tellus. Donec eget ipsum felis elementum quis hac
           tristique. Laoreet sagittis viverra dui tristique velit pharetra. At
@@ -33,7 +57,18 @@ export default function NewsletterBanner() {
             />
           </div>
 
-          <button className="w-full sm:w-auto  bg-blue-500 hover:bg-blue-400 text-white text-sm font-bold px-6 py-2.5 rounded-lg whitespace-nowrap transition-colors">
+          <button className="w-full sm:w-auto  bg-blue-500 hover:bg-blue-400 text-white text-sm font-bold px-6 py-2.5 rounded-lg whitespace-nowrap transition-colors"
+                style={{
+              fontSize: "16px",
+              fontFamily: "Manrope",
+              fontWeight: 800,
+              lineHeight: "24px",
+              letterSpacing: "0%",
+              color: "#fafaf9",
+              fontStyle: "ExtraBold",
+            
+          }}  
+          >
             ĐĂNG KÝ
           </button>
         </div>

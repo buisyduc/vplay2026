@@ -12,7 +12,7 @@ const ListItems = [
 
 const Ecosystem = () => {
   return (
-<div className="w-full py-12 px-4 overflow-hidden box-border">
+<div className="w-full  overflow-hidden box-border lg:mt-[64px] mb-[100px]   ">
   <div className="w-full max-w-[1100px] mx-auto overflow-hidden">
         <div className="flex items-center gap-2 mb-4">
           <svg
@@ -47,15 +47,15 @@ const Ecosystem = () => {
           <p className="text-xs text-gray-400">Hệ sinh thái</p>
         </div>
 
-        <h2 className="text-3xl font-bold text-white mb-6 mt-6">
+        <h2 className="text-3xl font-bold text-white lg: font-manrope text-[42px] font-extrabold leading-[50px] tracking-normal mt-[35px] mb-[35px]">
           Khám phá Hệ sinh thái
         </h2>
-        <p className="text-gray-300 mb-8 text-sm">
+        <p className="text-gray-30  text-sm  lg: font-manrope text-[16px] font-Regular leading-[22px] tracking-normal mb-[48px]">
           Lorem ipsum dolor sit amet consectetur. Elementum risus leo tortor
           enim. A sed sit nisi ornare lectus tristique diam bibendum imperdiet.
           Lectus purus ornare elit purus. Enim sit blandit id cras massa.
         </p>
-        <div className="list_ecosystem_menu gap-x-3 gap-y-6">
+        <div className="list_ecosystem_menu ">
           {ListItems.map((item) => (
             <div
               key={item.id}
@@ -103,7 +103,7 @@ const Ecosystem = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center mt-8 ">
+      <div className="flex justify-center lg:mt-[48px] ">
         <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold px-2 py-1 text-sm  transition-colors">
           XEM THÊM
         </button>

@@ -11,10 +11,10 @@ const ListItems = [
 const Ecosystem = () => {
   return (
     <div className="list-ecosystem w-full ">
-      <div className="ecosystem-inner   gap-6">
+      <div className="ecosystem-inner ">
         <div className="ecosystem-text shrink-0 text-white w-full md:w-auto">
           <h2 className="text-2xl md:text-3xl font-bold leading-tight mb-4 text-center md:text-left">
-            Khám phá <br className="br" /> Hệ sinh thái
+            Khám phá <br className="br " /> Hệ sinh thái
           </h2>
           <p className="text-gray-300 leading-relaxed mb-6 text-xs text-center md:text-left">
             Lorem ipsum dolor sit amet consectetur. Elementum risus leo tortor
@@ -32,7 +32,7 @@ const Ecosystem = () => {
         </div>
 
 
-        <div className="game-item-ecostystemf grid grid-cols-4 gap-3">
+        <div className="game-item-ecostystemf grid grid-cols-4 ">
           {ListItems.map((item) => (
             <div
               key={item.id}

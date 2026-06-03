@@ -15,13 +15,13 @@ const BannerMain = () => {
       </section>
 
       <div className="text_bannermain py-4 px-6 flex flex-col md:flex-row items-center justify-center gap-4 text-center">
-        <p className="text_dai text-gray-300 text-sm max-w-xl">
+        <p className="text_dai text-gray-300  max-w-xl lg:font-manrope text-[14px] font-Regular leading-[20px] tracking-normal">
           Lorem ipsum dolor sit amet consectetur. Quisque suspendisse interdum.
         </p>
         <p className="text_ngan text-gray-300 text-sm max-w-xl">
           Lorem ipsum dolor sit amet consectetur.
         </p>
-        <button>
+        <button className="button_banner">
           Xem chi tiết
         </button>
       </div>

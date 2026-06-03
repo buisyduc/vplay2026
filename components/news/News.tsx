@@ -3,7 +3,7 @@ import Link from "next/link";
 const News = () => {
   return (
     <div className="w-full py-12 px-6">
-      <div className="max-w-[800px] mx-auto">
+      <div className="max-w-[1000px] mx-auto">
         <div className=" items-center justify-between ">
           {/* Filter buttons */}
           <div className=" menu_news flex gap-2">
@@ -47,29 +47,32 @@ const News = () => {
           </div>
         </div>
         <Link href="/news/detailednews">
-        <div className="grid grid-cols-2 gap-2 mt-4">
-          <div className="relative w-full h-56 rounded overflow-hidden">
-            <Image
-              src="/Images/Rectangle 92.png"
-              alt="Game 1"
-              fill
-              className="object-cover rounded"
-            />
+          <div className="grid grid-cols-2 gap-2 mt-4">
+            <div className="relative w-full h-56 rounded overflow-hidden">
+              <Image
+                src="/Images/Rectangle 92.png"
+                alt="Game 1"
+                fill
+                className="object-cover rounded"
+              />
+            </div>
+            <div className="text_news_conten ">
+              <h2 className="text-white text-xl font-semibold mb-2  lg: font-manrope text-[22px] font-SemiBold leading-[30px] tracking-normal ">
+                Lorem ipsum dolor sit amet consectetur. Diam nisi tristique ac
+                erat quam egestas.
+              </h2>
+              <p className="text-sm text-[#D6D6D6] lg: font-manrope text-[16p x] font-Regular leading-[22px] tracking-normal">
+                Lorem ipsum dolor sit amet consectetur. Scelerisque egestas
+                feugiat massa risus erat. Libero dignissim convallis egestas
+                odio eget sit viverra sed sagittis. Amet leo eget vivamus amet
+                tortor at felis neque. Accumsan ultricies neque mauris enim
+                facilisis in.
+              </p>
+              <p className="text-gray-500 text-xs lg: font-manrope text-[14 x] font-Regular leading-[20px] ">
+                07/07/2025
+              </p>
+            </div>
           </div>
-          <div>
-            <h2 className="text-white text-xl font-semibold mb-2">
-              Lorem ipsum dolor sit amet consectetur. Diam nisi tristique ac
-              erat quam egestas.
-            </h2>
-            <p className="text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur. Scelerisque egestas
-              feugiat massa risus erat. Libero dignissim convallis egestas odio
-              eget sit viverra sed sagittis. Amet leo eget vivamus amet tortor
-              at felis neque. Accumsan ultricies neque mauris enim facilisis in.
-            </p>
-            <p className="text-gray-500 text-xs mt-6">07/07/2025</p>
-          </div>
-        </div>
         </Link>
         <div className="grid grid-cols-2 gap-2 mt-4">
           <div className="relative w-full h-56 rounded overflow-hidden">
@@ -80,18 +83,20 @@ const News = () => {
               className="object-cover rounded"
             />
           </div>
-          <div>
-            <h2 className="text-white text-xl font-semibold mb-2">
+          <div className="text_news_conten ">
+            <h2 className="text-white text-xl font-semibold mb-2  lg: font-manrope text-[22px] font-SemiBold leading-[30px] tracking-normal ">
               Lorem ipsum dolor sit amet consectetur. Diam nisi tristique ac
               erat quam egestas.
             </h2>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-[#D6D6D6] lg: font-manrope text-[16p x] font-Regular leading-[22px] tracking-normal">
               Lorem ipsum dolor sit amet consectetur. Scelerisque egestas
               feugiat massa risus erat. Libero dignissim convallis egestas odio
               eget sit viverra sed sagittis. Amet leo eget vivamus amet tortor
               at felis neque. Accumsan ultricies neque mauris enim facilisis in.
             </p>
-            <p className="text-gray-500 text-xs mt-6">07/07/2025</p>
+            <p className="text-gray-500 text-xs lg: font-manrope text-[14 x] font-Regular leading-[20px] ">
+              07/07/2025
+            </p>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-2 mt-4">
@@ -103,18 +108,20 @@ const News = () => {
               className="object-cover rounded"
             />
           </div>
-          <div>
-            <h2 className="text-white text-xl font-semibold mb-2">
+          <div className="text_news_conten ">
+            <h2 className="text-white text-xl font-semibold mb-2  lg: font-manrope text-[22px] font-SemiBold leading-[30px] tracking-normal ">
               Lorem ipsum dolor sit amet consectetur. Diam nisi tristique ac
               erat quam egestas.
             </h2>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-[#D6D6D6] lg: font-manrope text-[16p x] font-Regular leading-[22px] tracking-normal">
               Lorem ipsum dolor sit amet consectetur. Scelerisque egestas
               feugiat massa risus erat. Libero dignissim convallis egestas odio
               eget sit viverra sed sagittis. Amet leo eget vivamus amet tortor
               at felis neque. Accumsan ultricies neque mauris enim facilisis in.
             </p>
-            <p className="text-gray-500 text-xs mt-6">07/07/2025</p>
+            <p className="text-gray-500 text-xs lg: font-manrope text-[14 x] font-Regular leading-[20px] ">
+              07/07/2025
+            </p>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-2 mt-4">
@@ -126,18 +133,20 @@ const News = () => {
               className="object-cover rounded"
             />
           </div>
-          <div>
-            <h2 className="text-white text-xl font-semibold mb-2">
+          <div className="text_news_conten ">
+            <h2 className="text-white text-xl font-semibold mb-2  lg: font-manrope text-[22px] font-SemiBold leading-[30px] tracking-normal ">
               Lorem ipsum dolor sit amet consectetur. Diam nisi tristique ac
               erat quam egestas.
             </h2>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-[#D6D6D6] lg: font-manrope text-[16p x] font-Regular leading-[22px] tracking-normal">
               Lorem ipsum dolor sit amet consectetur. Scelerisque egestas
               feugiat massa risus erat. Libero dignissim convallis egestas odio
               eget sit viverra sed sagittis. Amet leo eget vivamus amet tortor
               at felis neque. Accumsan ultricies neque mauris enim facilisis in.
             </p>
-            <p className="text-gray-500 text-xs mt-6">07/07/2025</p>
+            <p className="text-gray-500 text-xs lg: font-manrope text-[14 x] font-Regular leading-[20px] ">
+              07/07/2025
+            </p>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-2 mt-4">
@@ -149,18 +158,20 @@ const News = () => {
               className="object-cover rounded"
             />
           </div>
-          <div>
-            <h2 className="text-white text-xl font-semibold mb-2">
+          <div className="text_news_conten ">
+            <h2 className="text-white text-xl font-semibold mb-2  lg: font-manrope text-[22px] font-SemiBold leading-[30px] tracking-normal ">
               Lorem ipsum dolor sit amet consectetur. Diam nisi tristique ac
               erat quam egestas.
             </h2>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-[#D6D6D6] lg: font-manrope text-[16p x] font-Regular leading-[22px] tracking-normal">
               Lorem ipsum dolor sit amet consectetur. Scelerisque egestas
               feugiat massa risus erat. Libero dignissim convallis egestas odio
               eget sit viverra sed sagittis. Amet leo eget vivamus amet tortor
               at felis neque. Accumsan ultricies neque mauris enim facilisis in.
             </p>
-            <p className="text-gray-500 text-xs mt-6">07/07/2025</p>
+            <p className="text-gray-500 text-xs lg: font-manrope text-[14 x] font-Regular leading-[20px] ">
+              07/07/2025
+            </p>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-2 mt-4">
@@ -172,18 +183,20 @@ const News = () => {
               className="object-cover rounded"
             />
           </div>
-          <div>
-            <h2 className="text-white text-xl font-semibold mb-2">
+          <div className="text_news_conten ">
+            <h2 className="text-white text-xl font-semibold mb-2  lg: font-manrope text-[22px] font-SemiBold leading-[30px] tracking-normal ">
               Lorem ipsum dolor sit amet consectetur. Diam nisi tristique ac
               erat quam egestas.
             </h2>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-[#D6D6D6] lg: font-manrope text-[16p x] font-Regular leading-[22px] tracking-normal">
               Lorem ipsum dolor sit amet consectetur. Scelerisque egestas
               feugiat massa risus erat. Libero dignissim convallis egestas odio
               eget sit viverra sed sagittis. Amet leo eget vivamus amet tortor
               at felis neque. Accumsan ultricies neque mauris enim facilisis in.
             </p>
-            <p className="text-gray-500 text-xs mt-6">07/07/2025</p>
+            <p className="text-gray-500 text-xs lg: font-manrope text-[14 x] font-Regular leading-[20px] ">
+              07/07/2025
+            </p>
           </div>
         </div>
         <div className="flex items-center justify-center gap-2 mt-8">
@@ -197,9 +210,7 @@ const News = () => {
             <button
               key={page}
               className={`w-8 h-8 text-sm font-semibold rounded ${
-                page === 1
-                  ? "bg-blue-600 text-white"
-                  : " "
+                page === 1 ? "bg-blue-600 text-white" : " "
               }`}
             >
               {page}

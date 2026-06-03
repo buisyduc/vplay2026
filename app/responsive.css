@@ -54,14 +54,41 @@
     padding: 8px 24px 8px 24px;
     border-radius: 4px;
   }
+  .text_dai {
+       font-size:14px;
+    font-family: Manrope;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #fafaf9;
+    font-style: Regular;
+  }
+  .button_banner{
+          font-size:16px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #fafaf9;
+    font-style: ExtraBold;
+    color: #0065FF;
+   }
+  
 
   .xemthem_new_home button {
     background-color: #0065ff;
+          font-size:16px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #fafaf9;
+    font-style: ExtraBold;
   }
 
   .container_home {
     padding-bottom: 200px;
-    background: url(/images/bg/bg_Mobile.webp) no-repeat top;
+    background: url(/Images/bg/bg_Mobile.webp) no-repeat top;
      background-size: cover;
      background-attachment: fixed;
   }
@@ -77,7 +104,7 @@
   .item-news-home {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+    gap: 16px 20px;
   }
 
   .game-item-ecostystemf {
@@ -103,8 +130,16 @@
   .list-games {
     display: grid;
     margin-top: 80px;
-
     gap: 32px;
+  }
+  .list-games h2{
+        font-size: 42px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0%;
+    color: #fafaf9;
+    font-style: ExtraBold;
   }
 
   .item_game_home {
@@ -126,26 +161,43 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     padding: 20px;
     background-color: #22242c;
 
-    gap: 16px;
-  }
+   }
 
   .game_text_item h3 {
-    font-size: 32px;
+       font-size: 32px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: #fafaf9;
+    font-style: SemiBold; 
   }
 
   .game_text_item p {
     font-size: 16px;
+    font-family: Manrope;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #D6D6D6;
+    font-style: Regular; 
   }
 
   .xemthem_game {
     color: #0065ff;
     display: flex;
     gap: 6px;
-    size: 16px;
+   
+     font-size: 16px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0%;
+    font-style: ExtraBold; 
   }
 
   .text_bannermain {
@@ -177,10 +229,13 @@
   }
 
   .ecosystem-text {
-    width: 300px;
+    width: 420px;
   display: flex;
     flex-direction: column;
-    gap: 35px;
+  }
+  .ecosystem-inner {
+    display: flex;
+    gap: 48px;
   }
   .ecosystem-text h2 {
       font-size: 42px;
@@ -323,13 +378,15 @@
     gap: 8px;
   }
 
- .text_item_news_two p,
-  .text_item_news_three p {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 13px;
+ .text_item_news_two p{
+  font-family: Manrope;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: #fafaf9;
+ 
+  
   }
   .text_two {
     border-radius: 4px;
@@ -419,7 +476,7 @@
   
   .container_home {
     padding-bottom: 200px;
-    background: url(/images/bg/bg_Mobile.webp) no-repeat top;
+    background: url(/Images/bg/bg_Mobile.webp) no-repeat top;
      background-size: cover;
      background-attachment: fixed;
   }
@@ -430,6 +487,7 @@
 
   .xemthem_new_home button {
     background-color: #0065ff;
+
   }
 
   

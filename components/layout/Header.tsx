@@ -50,7 +50,7 @@ const Header = () => {
     <>
       {/* ── HEADER ── */}
       <header className=" w-full bg-white border-b border-gray-200">
-        <div className="header max-w-screen-xl mx-auto px-3 sm:px-6 h-14 flex items-center justify-between gap-2">
+        <div className="header max-w-screen-xl mx-auto  h-14 flex items-center justify-between gap-2">
           {/* TRÁI: Hamburger + Logo + Language */}
           <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
             {/* Hamburger icon — chỉ hiện trên tablet/mobile */}

@@ -13,13 +13,15 @@
   }
    .container_home {
     padding-bottom: 160px;
-    background: url(/images/bg/bg_Mobile.webp) no-repeat top;
+    background: url(/Images/bg/bg_Mobile.webp) no-repeat top;
      background-size: cover;
      background-attachment: fixed;
   }
 
 
- 
+ .duongdna_teblet {
+  display: none;
+ }
 }
 /* Tablet  & Mobile */
 @media (max-width: 991.98px) {
@@ -32,7 +34,7 @@
   }
  .container_home {
     padding-bottom: 120px;
-    background: url(/images/bg/bg_Mobile.webp) no-repeat top;
+    background: url(/Images/bg/bg_Mobile.webp) no-repeat top;
      background-size: cover;
      background-attachment: fixed;
   }

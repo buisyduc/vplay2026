@@ -4,9 +4,9 @@ const ListGames = () => {
   return (
     <div className="list_game_home">
       <div className="list-games">
-        <p className="text-white font-bold  text-center text-4xl">
+        <h2 className="text-white font-bold  text-center text-4xl">
           Danh mục Game
-        </p>
+        </h2>
         <div className="item_game_home">
           <div key="mmo" className="game_card  ">
             <div className="game_image relative w-full h-[300px] flex-shrink-0">

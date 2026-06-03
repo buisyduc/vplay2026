@@ -10,11 +10,33 @@ const DetailedNews = () => {
           <p className="duongdna_teblet text-xs text-gray-400">
             Trang chủ / Tin tức / Chính tức khai mở Server mới / Hệ sinh thái
           </p>
-          <h2 className="text-3xl font-black">
+          <h2 className="text-3xl font-black lg: font-manrope text-[42px] font-extrabold leading-[50px] tracking-normal">
             Lorem ipsum dolor sit amet consectetur. Malesuada bibendum laoreet
             non sed quis integer. Malesuada scelerisque varius.
           </h2>
-          <p className="text-sm text-gray-300 mt-8">
+          <p className="text-sm text-gray-300 mt-8 lg: font-manrope text-[16px] font-Regular leading-[22px] tracking-normal ">
+            Lorem ipsum dolor sit amet consectetur. Erat integer pretium mollis
+            cursus elementum enim morbi pellentesque. Vitae id elementum in arcu
+            ac. Penatibus nec vulputate nec in est sit id. Lectus mauris a nunc
+            odio. Molestie magna volutpat id neque sapien. Est et hac eros
+            habitasse mi elementum nibh. Id nulla pharetra magna pharetra sed
+            magnis cursus. Nibh gravida nisi orci nibh vel quam donec cursus. In
+            lorem in sed sit justo. Eu vitae morbi massa in tellus tempor. Neque
+            egestas ut risus tellus amet quam tristique. Tempor aliquam urna
+            pellentesque in scelerisque augue. Id faucibus praesent euismod
+            donec felis ut platea.
+          </p>
+          <Image
+            src="/Images/Rectangle 92.png"
+            alt="News Image"
+            width={1000}
+            height={400}
+            className="object-cover rounded mt-8"
+          />
+          <p className="text-sm text-gray-300  flex justify-center lg: font-manrope text-[16px] font-Regular leading-[22px] tracking-normal">
+            Erat integer pretium mollis cursus elementum enim morbi pellentesque
+          </p>
+          <p className="text-sm text-gray-300 mt-8 lg: font-manrope text-[16px] font-Regular leading-[22px] tracking-normal">
             Lorem ipsum dolor sit amet consectetur. Erat integer pretium mollis
             cursus elementum enim morbi pellentesque. Vitae id elementum in arcu
             ac. Penatibus nec vulputate nec in est sit id. Lectus mauris a nunc
@@ -36,18 +58,6 @@ const DetailedNews = () => {
           <p className="text-sm text-gray-300  flex justify-center">
             Erat integer pretium mollis cursus elementum enim morbi pellentesque
           </p>
-          <p className="text-sm text-gray-300 mt-8">
-            Lorem ipsum dolor sit amet consectetur. Erat integer pretium mollis
-            cursus elementum enim morbi pellentesque. Vitae id elementum in arcu
-            ac. Penatibus nec vulputate nec in est sit id. Lectus mauris a nunc
-            odio. Molestie magna volutpat id neque sapien. Est et hac eros
-            habitasse mi elementum nibh. Id nulla pharetra magna pharetra sed
-            magnis cursus. Nibh gravida nisi orci nibh vel quam donec cursus. In
-            lorem in sed sit justo. Eu vitae morbi massa in tellus tempor. Neque
-            egestas ut risus tellus amet quam tristique. Tempor aliquam urna
-            pellentesque in scelerisque augue. Id faucibus praesent euismod
-            donec felis ut platea.
-          </p>
           <Image
             src="/Images/Rectangle 92.png"
             alt="News Image"
@@ -55,20 +65,10 @@ const DetailedNews = () => {
             height={400}
             className="object-cover rounded mt-8"
           />
-          <p className="text-sm text-gray-300  flex justify-center">
+          <p className="text-sm text-gray-300  flex justify-center lg: font-manrope text-[16px] font-Regular leading-[22px] tracking-normal">
             Erat integer pretium mollis cursus elementum enim morbi pellentesque
           </p>
-          <Image
-            src="/Images/Rectangle 92.png"
-            alt="News Image"
-            width={1000}
-            height={400}
-            className="object-cover rounded mt-8"
-          />
-          <p className="text-sm text-gray-300  flex justify-center">
-            Erat integer pretium mollis cursus elementum enim morbi pellentesque
-          </p>
-          <p className="text-sm text-gray-300 mt-8">
+          <p className="text-sm text-gray-300 mt-8 lg: font-manrope text-[16px] font-Regular leading-[22px] tracking-normal">
             Lorem ipsum dolor sit amet consectetur. Ut ultrices faucibus leo
             vitae odio laoreet enim. Amet mauris amet nunc nibh magna sed sed
             adipiscing. Cras convallis mattis eu facilisis. Dui aliquet at
@@ -104,7 +104,7 @@ const DetailedNews = () => {
                 height={400}
                 className="object-cover rounded mt-8"
               />
-              <p className="text-sm text-gray-300  flex justify-center">
+              <p className="text-sm text-gray-300  flex justify-center lg: font-manrope text-[16px] font-Regular leading-[22px] tracking-normal">
                 Lorem ipsum dolor sit amet consectetur
               </p>
             </div>
@@ -116,14 +116,14 @@ const DetailedNews = () => {
                 height={400}
                 className="object-cover rounded mt-8"
               />
-              <p className="text-sm text-gray-300  flex justify-center">
+              <p className="text-sm text-gray-300  flex justify-centerb lg: font-manrope text-[16px] font-Regular leading-[22px] tracking-normal">
                 Lorem ipsum dolor sit amet consectetur
               </p>
             </div>
           </div>
         </div>
         <div className="...">
-          <h3 className="text-xl font-bold mb-4">Tin mới nhất</h3>
+          <h3 className="text-xl font-bold mb-4  lg: font-manrope text-[18px] font-ExtraBold leading-[24px] tracking-normal">Tin mới nhất</h3>
           <div className="flex gap-3 bg-gray-800 rounded-lg p-4 mb-4 items-start">
             {/* Ảnh cố định bên trái */}
             <div className="relative w-[100px] h-[80px] flex-shrink-0">
