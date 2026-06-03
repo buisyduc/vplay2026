@@ -13,7 +13,7 @@
   }
    .container_home {
     padding-bottom: 160px;
-    background: url(/Images/bg/bg_Mobile.webp) no-repeat top;
+    background: url(/Images/bg/bg_PC.webp) no-repeat top;
      background-size: cover;
      background-attachment: fixed;
   }
@@ -47,7 +47,13 @@
     padding-inline: 3rem;
   }
 } 
-
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container_home{
+    background: url(/Images/bg/bg_Tablet.webp) no-repeat top;
+     background-size: cover;
+     background-attachment: fixed;
+  }
+}
 /* Mobile */
 @media (max-width: 767.98px) {
      .header {
