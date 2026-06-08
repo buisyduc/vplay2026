@@ -1,7 +1,7 @@
 import Image from "next/image";
 const DetailedNews = () => {
   return (
-    <div className="w-full py-12 px-6 max-w-[1100px] mx-auto">
+    <div className="w-full py-12 px-6 max-w-[1320px] mx-auto">
       <div className="list_detailed_news">
         <div className="col-span-2 ">
           <p className="duongdna_pc text-xs text-gray-400">
@@ -10,11 +10,29 @@ const DetailedNews = () => {
           <p className="duongdna_teblet text-xs text-gray-400">
             Trang chủ / Tin tức / Chính tức khai mở Server mới / Hệ sinh thái
           </p>
-          <h2 className="text-3xl font-black lg: font-manrope text-[42px] font-extrabold leading-[50px] tracking-normal">
+          <p className="duongdna_mobile text-xs text-[D6D6D6] flex items-center gap-1">
+            <svg
+              width="6"
+              height="11"
+              viewBox="0 0 6 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.19995 9.7L0.699951 5.2L5.19995 0.699997"
+                stroke="#D6D6D6"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Quay lại
+          </p>
+          <h2 className=" font-manrope text-[18px] font-bold leading-[24px]  lg: font-manrope lg:text-[42px] lg:font-extrabold lg:leading-[50px] tracking-normal">
             Lorem ipsum dolor sit amet consectetur. Malesuada bibendum laoreet
             non sed quis integer. Malesuada scelerisque varius.
           </h2>
-          <p className="text-sm text-gray-300 mt-8 lg: font-manrope text-[16px] font-Regular leading-[22px] tracking-normal ">
+          <p className="text-sm text-gray-300 mt-8 lg:font-manrope lg:text-[16px] lg:font-Regular lg:leading-[22px] tracking-normal ">
             Lorem ipsum dolor sit amet consectetur. Erat integer pretium mollis
             cursus elementum enim morbi pellentesque. Vitae id elementum in arcu
             ac. Penatibus nec vulputate nec in est sit id. Lectus mauris a nunc
@@ -122,11 +140,13 @@ const DetailedNews = () => {
             </div>
           </div>
         </div>
-        <div className="...">
-          <h3 className="text-xl font-bold mb-4  lg: font-manrope text-[18px] font-ExtraBold leading-[24px] tracking-normal">Tin mới nhất</h3>
-          <div className="flex gap-3 bg-gray-800 rounded-lg p-4 mb-4 items-start">
+        <div className="news_sidebar_container mb-[48px]">
+          <h3 className="text-xl font-bold mb-4  lg: font-manrope text-[18px] font-ExtraBold leading-[24px] tracking-normal">
+            Tin mới nhất
+          </h3>
+          <div className="flex gap-3 bg-gray-800 rounded-[4px] md:p-4 mb-4 items-start">
             {/* Ảnh cố định bên trái */}
-            <div className="relative w-[100px] h-[80px] flex-shrink-0">
+            <div className="img_item_container relative w-[160px] h-[140px] flex-shrink-0">
               <Image
                 src="/Images/Rectangle 26.png"
                 alt="Game 1"
@@ -136,7 +156,7 @@ const DetailedNews = () => {
             </div>
 
             {/* Text bên phải */}
-            <div className="flex flex-col gap-1">
+            <div className="text_item_menu_container flex flex-col gap-1">
               <h4 className="inline-flex items-center gap-1 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded w-fit">
                 TIN TỨC
               </h4>
@@ -146,9 +166,9 @@ const DetailedNews = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-3 bg-gray-800 rounded-lg p-4 mb-4 items-start">
+          <div className="flex gap-3 bg-gray-800 rounded-[4px] md:p-4 mb-4 items-start">
             {/* Ảnh cố định bên trái */}
-            <div className="relative w-[100px] h-[80px] flex-shrink-0">
+            <div className="img_item_container relative w-[160px] h-[140px] flex-shrink-0">
               <Image
                 src="/Images/Rectangle 26.png"
                 alt="Game 1"
@@ -158,7 +178,7 @@ const DetailedNews = () => {
             </div>
 
             {/* Text bên phải */}
-            <div className="flex flex-col gap-1">
+            <div className="text_item_menu_container flex flex-col gap-1">
               <h4 className="inline-flex items-center gap-1 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded w-fit">
                 TIN TỨC
               </h4>
@@ -168,9 +188,9 @@ const DetailedNews = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-3 bg-gray-800 rounded-lg p-4 mb-4 items-start">
+          <div className="flex gap-3 bg-gray-800 rounded-[4px] md:p-4 mb-4 items-start">
             {/* Ảnh cố định bên trái */}
-            <div className="relative w-[100px] h-[80px] flex-shrink-0">
+            <div className="img_item_container relative w-[160px] h-[140px] flex-shrink-0">
               <Image
                 src="/Images/Rectangle 26.png"
                 alt="Game 1"
@@ -180,7 +200,7 @@ const DetailedNews = () => {
             </div>
 
             {/* Text bên phải */}
-            <div className="flex flex-col gap-1">
+            <div className="text_item_menu_container flex flex-col gap-1">
               <h4 className="inline-flex items-center gap-1 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded w-fit">
                 TIN TỨC
               </h4>
@@ -190,9 +210,9 @@ const DetailedNews = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-3 bg-gray-800 rounded-lg p-4 mb-4 items-start">
+          <div className="flex gap-3 bg-gray-800 rounded-[4px] md:p-4 mb-4 items-start">
             {/* Ảnh cố định bên trái */}
-            <div className="relative w-[100px] h-[80px] flex-shrink-0">
+            <div className="img_item_container relative w-[160px] h-[140px] flex-shrink-0">
               <Image
                 src="/Images/Rectangle 26.png"
                 alt="Game 1"
@@ -202,7 +222,7 @@ const DetailedNews = () => {
             </div>
 
             {/* Text bên phải */}
-            <div className="flex flex-col gap-1">
+            <div className="text_item_menu_container flex flex-col gap-1">
               <h4 className="inline-flex items-center gap-1 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded w-fit">
                 TIN TỨC
               </h4>
@@ -212,9 +232,9 @@ const DetailedNews = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-3 bg-gray-800 rounded-lg p-4 mb-4 items-start">
+          <div className="flex gap-3 bg-gray-800 rounded-[4px] md:p-4 mb-4 items-start">
             {/* Ảnh cố định bên trái */}
-            <div className="relative w-[100px] h-[80px] flex-shrink-0">
+            <div className="img_item_container relative w-[160px] h-[140px] flex-shrink-0">
               <Image
                 src="/Images/Rectangle 26.png"
                 alt="Game 1"
@@ -224,7 +244,7 @@ const DetailedNews = () => {
             </div>
 
             {/* Text bên phải */}
-            <div className="flex flex-col gap-1">
+            <div className="text_item_menu_container flex flex-col gap-1">
               <h4 className="inline-flex items-center gap-1 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded w-fit">
                 TIN TỨC
               </h4>

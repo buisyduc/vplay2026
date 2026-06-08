@@ -1,44 +1,31 @@
 /* PC */
 @media (min-width: 992px) {
- 
-
-.thumb-item {
-  cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
+  .thumb-item {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
     flex-shrink: 0;
+  }
 
-}
+  .thumb-item.active {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  .slider-thumb {
+    display: flex;
+    gap: 24px;
+    scroll-behavior: smooth;
+    justify-content: center;
+    align-items: center;
 
-.thumb-item.active {
-  opacity: 1;
-  transform: scale(1.1);
-}
-.slider-thumb {
-  display: flex;
-  gap: 24px;
-  scroll-behavior: smooth;
-  justify-content: center;
-    align-items: center;   
+    /* Ẩn scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 
-  
-  /* Ẩn scrollbar */
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.slider-thumb::-webkit-scrollbar {
-  display: none;
-}
-
-
-
-
-
-
-
-
-
+  .slider-thumb::-webkit-scrollbar {
+    display: none;
+  }
 
   html,
   body {
@@ -55,7 +42,7 @@
     border-radius: 4px;
   }
   .text_dai {
-       font-size:14px;
+    font-size: 14px;
     font-family: Manrope;
     font-weight: 400;
     line-height: 20px;
@@ -63,34 +50,35 @@
     color: #fafaf9;
     font-style: Regular;
   }
-  .button_banner{
-          font-size:16px;
+  .button_banner {
+    font-size: 16px;
     font-family: Manrope;
     font-weight: 800;
     line-height: 24px;
     letter-spacing: 0%;
     color: #fafaf9;
     font-style: ExtraBold;
-    color: #0065FF;
-   }
-  
+    color: #0065ff;
+  }
 
   .xemthem_new_home button {
     background-color: #0065ff;
-          font-size:16px;
+    font-size: 16px;
     font-family: Manrope;
     font-weight: 800;
     line-height: 24px;
     letter-spacing: 0%;
     color: #fafaf9;
     font-style: ExtraBold;
+    border-radius: 4px;
+    padding: 8px 24px 8px 24px;
   }
 
   .container_home {
     padding-bottom: 200px;
     background: url(/Images/bg/bg_PC.webp) no-repeat top;
-     background-size: cover;
-     background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .from_footer {
@@ -120,6 +108,11 @@
     gap: 10px;
     margin-bottom: 168px;
   }
+  .header {
+    max-width: 1320px;
+    margin: auto;
+    height: 7vh;
+  }
 
   .list-ecosystem {
     max-width: 1320px;
@@ -132,8 +125,8 @@
     margin-top: 80px;
     gap: 32px;
   }
-  .list-games h2{
-        font-size: 42px;
+  .list-games h2 {
+    font-size: 42px;
     font-family: Manrope;
     font-weight: 800;
     line-height: 50px;
@@ -164,18 +157,16 @@
     gap: 16px;
     padding: 20px;
     background-color: #22242c;
-
-   }
+  }
 
   .game_text_item h3 {
-       font-size: 32px;
+    font-size: 32px;
     font-family: Manrope;
     font-weight: 600;
     line-height: 40px;
     letter-spacing: 0%;
     color: #fafaf9;
-    font-style: SemiBold; 
-    
+    font-style: SemiBold;
   }
 
   .game_text_item p {
@@ -184,21 +175,21 @@
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0%;
-    color: #D6D6D6;
-    font-style: Regular; 
+    color: #d6d6d6;
+    font-style: Regular;
   }
 
   .xemthem_game {
     color: #0065ff;
     display: flex;
     gap: 6px;
-   
-     font-size: 16px;
+
+    font-size: 16px;
     font-family: Manrope;
     font-weight: 800;
     line-height: 24px;
     letter-spacing: 0%;
-    font-style: ExtraBold; 
+    font-style: ExtraBold;
   }
 
   .text_bannermain {
@@ -217,37 +208,53 @@
     padding-inline: 1rem;
     display: grid;
     gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 
   .newsletter-banner {
-    padding-inline: 3rem;
+    padding-inline: 1rem;
   }
 
   .ecosystem-inner {
     padding-inline: 1rem;
     display: flex;
+    gap: 48px;
+  }
+  .button {
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    font-style: ExtraBold;
+  }
+  .text_code_ecosystem {
+    font-size: 20px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #fafaf9;
+    font-style: SemiBold;
   }
 
   .ecosystem-text {
-    width: 420px;
-  display: flex;
+    width: 30%;
+    display: flex;
     flex-direction: column;
   }
-  .ecosystem-inner {
-    display: flex;
-    gap: 48px;
-  }
+
   .ecosystem-text h2 {
-      font-size: 42px;
+    font-size: 42px;
     font-family: Manrope;
     font-weight: 800;
     line-height: 50px;
     letter-spacing: 0%;
     color: #fafaf9;
   }
-    .ecosystem-text p {
-      font-size: 16px;
+  .ecosystem-text p {
+    font-size: 16px;
     font-family: Manrope;
     font-weight: 400;
     line-height: 22px;
@@ -255,7 +262,6 @@
     color: #fafaf9;
     font-style: Regular;
   }
-
 
   .button_game {
     display: none;
@@ -332,30 +338,29 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    
   }
-      .img_item_news_two {
-        background-color: #2e303a;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 16px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-        .text_item_news_two {
-        background-color: #2e303a;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        padding: 16px;
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        align-items: flex-start;
-        gap: 12px;
-    }
-    
-   .img_item_news_two img,
+  .img_item_news_two {
+    background-color: #2e303a;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .text_item_news_two {
+    background-color: #2e303a;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .img_item_news_two img,
   .img_item_news_three img {
     width: 100%;
     height: 100%;
@@ -370,24 +375,13 @@
     border-top-right-radius: 4px;
   }
 
-   .text_item_news_two,
-  .text_item_news_three {
-    flex: 1;
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
- .text_item_news_two p{
-  font-family: Manrope;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: 0%;
-        color: #fafaf9;
- 
-  
+  .text_item_news_two p {
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #fafaf9;
   }
   .text_two {
     border-radius: 4px;
@@ -474,12 +468,11 @@
 
 /* Tablet  & Mobile */
 @media (max-width: 991.98px) {
-  
   .container_home {
     padding-bottom: 200px;
     background: url(/Images/bg/bg_Mobile.webp) no-repeat top;
-     background-size: cover;
-     background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
   }
   .xemthem_new_home {
     padding: 8px 24px 8px 24px;
@@ -488,10 +481,7 @@
 
   .xemthem_new_home button {
     background-color: #0065ff;
-
   }
-
-  
 
   .from_footer {
     display: flex;
@@ -532,9 +522,10 @@
 
   .item_game_home {
     padding-inline: 1rem;
+
     display: grid;
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 12px;
   }
 
   .game_card {
@@ -587,14 +578,23 @@
   }
 
   .game_text_item h3 {
-    font-size: 32px;
+    font-size: 24px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: #fafaf9;
   }
 
   .xemthem_game {
-    color: #0065ff;
+    color: #697eff;
     display: flex;
     gap: 6px;
-    size: 16px;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0%;
   }
 
   .text_bannermain {
@@ -615,7 +615,7 @@
   }
 
   .newsletter-banner {
-    padding-inline: 3rem;
+    padding-inline: 1rem;
   }
 
   .ecosystem-inner {
@@ -632,6 +632,11 @@
     border: 1.5px solid #0065ff;
     padding: 8px 24px 8px 24px;
     border-radius: 4px;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0%;
   }
 
   .text_news {
@@ -830,17 +835,26 @@
   .text_dai {
     display: none;
   }
-  
+
   .br {
     display: none;
   }
   .ecosystem-text h2 {
     text-align: center;
-   
-
+    font-size: 32px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: #fafaf9;
   }
   .ecosystem-inner p {
     text-align: center;
+    font-size: 14px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
   }
   .ecosystem-inner {
     display: flex;
@@ -871,16 +885,15 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .container_home{
+  .container_home {
     background: url(/Images/bg/bg_Tablet.webp) no-repeat top;
-     background-size: cover;
-     background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
 
 /* Mobile */
 @media (max-width: 767.98px) {
-  
   .text_bannermain {
     display: flex;
     flex-direction: row;
@@ -913,7 +926,7 @@
     border-radius: 8px;
     display: block;
   }
-   .img_item_news_two,
+  .img_item_news_two,
   .img_item_news_three {
     flex-shrink: 0;
     width: 140px;
@@ -923,9 +936,8 @@
     border-radius: 0;
     background-color: #2e303a;
   }
- 
-  
- .img_item_news_two img,
+
+  .img_item_news_two img,
   .img_item_news_three img {
     width: 140px !important;
     height: 100% !important;
@@ -941,14 +953,14 @@
     gap: 0.5rem;
   }
   .newsletter-banner {
-    padding-inline: 3rem;
+    padding-inline: 1rem;
   }
   .menu {
     display: none;
   }
 
   .list-games {
-        margin-top: 80px;
+    margin-top: 80px;
 
     grid-template-columns: 1fr !important;
   }
@@ -981,8 +993,23 @@
     padding-inline: 1rem;
   }
   .button_game {
-    text-align: center;
-    margin-top: 20px;
+   display: none;
+  }
+  .button_game_mobile  {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    
+  }
+  .button_game_mobile  a{
+    
+    background-color: #0065ff;
+    border-radius: 4px;
+    padding: 8px 24px 8px 24px;
+    font-size: 12px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 18px;
   }
   .game-item-ecostystemf {
     display: grid;
@@ -991,7 +1018,7 @@
   .ecosystem-text {
     padding-inline: 1rem;
   }
-  
+
   .item_news_two,
   .item_news_three {
     display: flex;
@@ -1001,7 +1028,6 @@
     background-color: #2e303a;
     align-items: stretch;
   }
-  
 
   .from_footer {
     display: flex;

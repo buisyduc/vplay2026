@@ -50,7 +50,7 @@ const Header = () => {
     <>
       {/* ── HEADER ── */}
       <header className=" w-full bg-white border-b border-gray-200">
-        <div className="header max-w-screen-xl mx-auto  h-14 flex items-center justify-between gap-2">
+        <div className="header w-full h-14 flex items-center justify-between gap-2 px-4">
           {/* TRÁI: Hamburger + Logo + Language */}
           <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
             {/* Hamburger icon — chỉ hiện trên tablet/mobile */}
@@ -75,14 +75,13 @@ const Header = () => {
                 <line x1="3" x2="21" y1="18" y2="18" />
               </svg>
             </button>
-      
+
             <Image
               src="/Images/Logo/logo-Vplay-Primary 1.svg"
               alt="VPlay Logo"
               width={90}
               height={30}
               className="w-[80px] sm:w-[120px]"
-
             />
 
             <span className="text-gray-400">|</span>
@@ -156,10 +155,11 @@ const Header = () => {
                 <li key={item.label}>
                   <Link
                     href={item.href}
-                    className={`text-sm ${pathname === item.href
+                    className={`text-sm ${
+                      pathname === item.href
                         ? "text-blue-600 font-bold"
                         : "text-gray-700 hover:text-blue-600"
-                      }`}
+                    }`}
                   >
                     {item.label}
                   </Link>
@@ -234,9 +234,10 @@ const Header = () => {
                   }}
                   className={`
                     flex items-center px-6 py-3 text-sm transition
-                    ${pathname === item.href
-                      ? "text-blue-600 font-bold bg-blue-50 border-l-4 border-blue-600"
-                      : "text-gray-700 hover:bg-gray-100 hover:text-blue-600 border-l-4 border-transparent"
+                    ${
+                      pathname === item.href
+                        ? "text-blue-600 font-bold bg-blue-50 border-l-4 border-blue-600"
+                        : "text-gray-700 hover:bg-gray-100 hover:text-blue-600 border-l-4 border-transparent"
                     }
                   `}
                 >

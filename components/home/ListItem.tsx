@@ -110,7 +110,7 @@ const Slider: React.FC = () => {
   return (
     <div
       className="slider"
-      style={{ width: "100vw", height: "100vh", overflow: "hidden" }}
+      style={{ width: "100vw",height: "92vh", overflow: "hidden" }}
     >
       <style jsx global>{`
         /* 1. KHU VỰC NÚT ĐIỀU HƯỚNG GỐC */
@@ -277,7 +277,7 @@ const Slider: React.FC = () => {
                   className="slider-content"
                   style={{
                     position: "absolute",
-                    top: "60%",
+                    top: "55%",
                     left: "50%",
                     transform: "translateX(-50%)",
                     zIndex: 6,
@@ -371,17 +371,19 @@ const Slider: React.FC = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  overflow: "visible"
+                  overflow: "visible",
+                  width: "auto" 
                 }}
               >
                 {({ isActive }) => (
                   <div
-                    id="thumb-item"
                     className={`thumb-item ${isActive ? "active" : ""}`}
                     style={{
-                      width: "100px",
+                      width: "100px", 
+                      height: "100px", 
+                      aspectRatio: "1 / 1",
 
-                      borderRadius: "16px",
+                      borderRadius: "24px",
                       overflow: "hidden",
                       isolation: "isolate",
                       transition:
@@ -389,7 +391,7 @@ const Slider: React.FC = () => {
                       border: isActive
                         ? "3px solid #ffffff"
                         : "2px solid rgba(255, 255, 255, 0.25)",
-                      transform: isActive ? "scale(1.25)" : "scale(1)",
+                      transform: isActive ? "scale(1.26)" : "scaleX(0.99) scaleY(1)",
                       zIndex: isActive ? 10 : 1
                     }}
                   >
@@ -401,10 +403,7 @@ const Slider: React.FC = () => {
                         width: "100%",
                         height: "100%",
                         objectFit: "cover",
-                        transform: "scale(1.05)",
-                        filter: isActive
-                          ? "brightness(1)"
-                          : "brightness(0.55) grayscale(10%)",
+                        opacity: isActive ? 1 : 0.8,
                         transition: "filter 0.3s ease, transform 0.3s ease"
                       }}
                     />

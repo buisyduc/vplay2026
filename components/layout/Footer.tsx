@@ -7,7 +7,7 @@ export default function Footer() {
     <footer
       className="
       w-full
-      bg-[url('/Images/T002.png')]
+      bg-[url('/Images/bg/bgfooter.png')]
       bg-cover
       bg-top
       bg-no-repeat

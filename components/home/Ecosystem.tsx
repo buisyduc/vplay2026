@@ -24,7 +24,8 @@ const Ecosystem = () => {
           </p>
           <div className="button flex justify-center md:justify-start">
             <Link href="/ecosystem">
-              <button className="text-white bg-blue-700 hover:bg-blue-600 transition-all duration-300 px-5 py-2 text-xs font-semibold rounded-xs">
+              <button className="text-white bg-blue-700 hover:bg-blue-600 transition-all duration-300 px-5 py-2 text-xs font-semibold rounded-xs 
+              lg:">
                 XEM TẤT CẢ
               </button>
             </Link>
@@ -48,7 +49,7 @@ const Ecosystem = () => {
               <div className="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-blue-600/75 to-transparent transition-all duration-400 ease-in-out group-hover:h-20 z-10" />
 
               <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white">
-                <span className="text-sm font-bold tracking-wide mb-8">
+                <span className="text_code_ecosystem text-sm font-bold tracking-wide mb-8">
                   {item.code}
                 </span>
                 <span className="text-lg font-bold mt-4">
@@ -83,6 +84,11 @@ const Ecosystem = () => {
         <div className="button_game">
           <Link href="/ecosystem">
               XEM TẤT CẢ
+          </Link>
+      </div>
+       <div className="button_game_mobile hidden ">
+          <Link href="/ecosystem">
+              XEM THÊM
           </Link>
       </div>
     </div>

@@ -3,6 +3,7 @@
   .list_games_menu {
     max-width: 1320px;
     margin: auto;
+    padding-inline: 1rem;
   }
   .game_menu {
     margin-top: 64px;
@@ -64,16 +65,21 @@
   .from_footer_center {
     display: flex;
   }
+   .search_game {
+    width: 590px;
+ }
 
-  .list-games {
-    padding-inline: 1rem;
-  }
-  .list-news {
-    padding-inline: 1rem;
-  }
-  .newsletter-banner {
-    padding-inline: 3rem;
-  }
+
+ .search_game_input {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+
+  
+ }
+ 
   .list_games_three {
     display: none;
   }
@@ -86,6 +92,11 @@
   .menu_game {
     display: flex;
     margin-bottom: 40px;
+  }
+  .header {
+    max-width: 1320px;
+    margin: auto;
+    height: 7vh;
   }
 }
 /* Tablet  & Mobile */
@@ -121,6 +132,8 @@
   }
     .game_menu h1 {
     margin-bottom: 24px;
+    padding-inline: 3rem;
+     
   }
    .container_home{
     padding-bottom: 80px;
@@ -146,7 +159,7 @@
     width: 600px;
     display: flex;
   }
-  .xemthem_game {
+  .xemthem_game_container {
     display: none;
   }
 
@@ -156,10 +169,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     margin-bottom: 60px ;
+    padding-inline: 3rem;
   }
   .menu_game {
     text-align: center;
     padding-bottom: 24px;
+    padding-inline: 3rem;
   }
   .menu_game_item {
     padding-top: 10px;
@@ -167,12 +182,18 @@
   }
   .search_game {
     width: 100%;
+    position: relative;
+  }
+  .icon_search{
+    position: absolute;
+    right: 14px;
+
   }
   .search_game_input {
     width: 100%;
   }
   .newsletter-banner {
-    padding-inline: 3rem;
+    padding-inline: 1rem;
   }
 }
 /* Tablet */
@@ -198,15 +219,20 @@
     flex: 0 0 70%;
     scroll-snap-align: center;
   }
+  .menu_game{
+    padding-inline: 1rem;
+  }
 
  
   .game_menu h1 {
     text-align: center;
+    padding-inline: 1rem;
   }
   .list-games_item {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
+    padding-inline: 1rem;
   }
   .from_footer {
     display: flex;

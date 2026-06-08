@@ -162,10 +162,11 @@ const ListNews = () => {
       </div>
       <Link href="/news">
         <div className="xemthem_new_home flex justify-center ">
-          <button className=" hover:bg-blue-400 text-white font-bold px-2 py-1  transition-colors">
+          <button className=" hover:bg-blue-400 text-white font-bold px-2 py-1  transition-colors raounded-[4px] ">
             XEM THÊM
           </button>
         </div>
+        
       </Link>
     </div>
   );

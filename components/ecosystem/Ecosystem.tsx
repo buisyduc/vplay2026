@@ -12,9 +12,9 @@ const ListItems = [
 
 const Ecosystem = () => {
   return (
-<div className="w-full  overflow-hidden box-border lg:mt-[64px] mb-[100px]   ">
-  <div className="w-full max-w-[1100px] mx-auto overflow-hidden">
-        <div className="flex items-center gap-2 mb-4">
+<div className="w-full  overflow-hidden box-border   ">
+  <div className="ecosytem_container w-full max-w-[1320px] mx-auto overflow-hidden">
+        <div className="duongdan_ecosytem flex items-center gap-2 mb-4  mt-[64px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="14"
@@ -30,7 +30,7 @@ const Ecosystem = () => {
 
             <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
           </svg>
-          <p className="text-xs text-gray-400">Trang chủ </p>
+          <p className="font-manrope text-[16px] font-regular leading-[22px] tracking-normal text-[#D6D6D6]">Trang chủ </p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="14"
@@ -44,13 +44,13 @@ const Ecosystem = () => {
           >
             <path d="m9 18 6-6-6-6"></path>
           </svg>
-          <p className="text-xs text-gray-400">Hệ sinh thái</p>
+          <p className="font-manrope text-[16px] font-regular leading-[22px] tracking-normal text-[#D6D6D">Hệ sinh thái</p>
         </div>
 
-        <h2 className="text-3xl font-bold text-white lg: font-manrope text-[42px] font-extrabold leading-[50px] tracking-normal mt-[35px] mb-[35px]">
+        <h2 className="text-3xl font-bold text-white  font-manrope text-[42px] font-extrabold leading-[50px] tracking-normal mt-[35px] mb-[35px]">
           Khám phá Hệ sinh thái
         </h2>
-        <p className="text-gray-30  text-sm  lg: font-manrope text-[16px] font-Regular leading-[22px] tracking-normal mb-[48px]">
+        <p className="text-gray-30  text-sm   font-manrope text-[16px] font-Regular leading-[22px] tracking-normal mb-[48px]">
           Lorem ipsum dolor sit amet consectetur. Elementum risus leo tortor
           enim. A sed sit nisi ornare lectus tristique diam bibendum imperdiet.
           Lectus purus ornare elit purus. Enim sit blandit id cras massa.
@@ -71,7 +71,7 @@ const Ecosystem = () => {
               <div className="absolute bottom-0 left-0 w-full h-0 bg-gradient-to-t from-blue-600/75 to-transparent transition-all duration-400 ease-in-out group-hover:h-20 z-10" />
 
               <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white">
-                <span className="text-sm font-bold tracking-wide mb-8">
+                <span className="font-manrope text-[20px] font-SemiBold leading-[24px] tracking-normal text-[#FFFFFF] mb-8">
                   {item.code}
                 </span>
                 <span className="text-lg font-bold mt-4">
@@ -103,7 +103,7 @@ const Ecosystem = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center lg:mt-[48px] ">
+      <div className="flex justify-center mt-[48px] ">
         <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold px-2 py-1 text-sm  transition-colors">
           XEM THÊM
         </button>

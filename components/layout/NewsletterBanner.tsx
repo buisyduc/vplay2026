@@ -1,6 +1,6 @@
 export default function NewsletterBanner() {
   return (
-    <div className="newsletter-banner w-full max-w-[1000px] mx-auto px-4 md:px-6 relative z-20 -mt-32 mb-10">
+    <div className="newsletter-banner w-full max-w-[1320px] mx-auto px-4 md:px-6 relative z-20 -mt-32 mb-10">
       <div
         className="w-full rounded-[8px] p-6 md:p-10 flex flex-col items-center text-center gap-4"
         style={{
@@ -20,7 +20,7 @@ export default function NewsletterBanner() {
               lineHeight: "50px",
               letterSpacing: "0%",
               color: "#fafaf9",
-              fontStyle: "ExtraBold",
+              
             
           }}  
         >Đăng ký nhận bản tin</h2>
@@ -32,7 +32,6 @@ export default function NewsletterBanner() {
               lineHeight: "22px",
               letterSpacing: "0%",
               color: "#fafaf9",
-              fontStyle: "ExtraBold",
             
           }}  
         >

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 const News = () => {
   return (
-    <div className="w-full py-12 px-6">
+    <div className="news_container_list w-full py-12 px-8 ">
       <div className="max-w-[1000px] mx-auto">
         <div className=" items-center justify-between ">
           {/* Filter buttons */}
@@ -47,7 +47,7 @@ const News = () => {
           </div>
         </div>
         <Link href="/news/detailednews">
-          <div className="grid grid-cols-2 gap-2 mt-4">
+          <div className=" item_new_container  grid grid-cols-2 gap-2 mt-4">
             <div className="relative w-full h-56 rounded overflow-hidden">
               <Image
                 src="/Images/Rectangle 92.png"
@@ -74,7 +74,7 @@ const News = () => {
             </div>
           </div>
         </Link>
-        <div className="grid grid-cols-2 gap-2 mt-4">
+        <div className=" item_new_container  grid grid-cols-2 gap-2 mt-4">
           <div className="relative w-full h-56 rounded overflow-hidden">
             <Image
               src="/Images/Rectangle21.png"
@@ -99,7 +99,8 @@ const News = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-2 mt-4">
+        <div></div>
+        <div className=" item_new_container  grid grid-cols-2 gap-2 mt-4">
           <div className="relative w-full h-56 rounded overflow-hidden">
             <Image
               src="/Images/Rectangle19.png"
@@ -124,7 +125,7 @@ const News = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-2 mt-4">
+        <div className=" item_new_container  grid grid-cols-2 gap-2 mt-4">
           <div className="relative w-full h-56 rounded overflow-hidden">
             <Image
               src="/Images/Rectangle 93.png"
@@ -149,7 +150,7 @@ const News = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-2 mt-4">
+        <div className=" item_new_container  grid grid-cols-2 gap-2 mt-4">
           <div className="relative w-full h-56 rounded overflow-hidden">
             <Image
               src="/Images/Rectangle21.png"
@@ -174,7 +175,7 @@ const News = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-2 mt-4">
+        <div className=" item_new_container  grid grid-cols-2 gap-2 mt-4">
           <div className="relative w-full h-56 rounded overflow-hidden">
             <Image
               src="/Images/Rectangle94.png"
@@ -201,15 +202,27 @@ const News = () => {
         </div>
         <div className="flex items-center justify-center gap-2 mt-8">
           {/* Prev */}
-          <button className="text-gray-400 hover:text-white px-2 py-1 text-sm">
-            &lt;
-          </button>
+          <svg
+            width="11"
+            height="19"
+            viewBox="0 0 11 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.31885 17.3867L1.00001 9.19337L9.31885 1.00003"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
 
           {/* Pages */}
           {[1, 2, 3, 4, 5].map((page) => (
             <button
               key={page}
-              className={`w-8 h-8 text-sm font-semibold rounded ${
+              className={`w-10 h-10 text-sm font-semibold rounded ${
                 page === 1 ? "bg-blue-600 text-white" : " "
               }`}
             >
@@ -218,9 +231,21 @@ const News = () => {
           ))}
 
           {/* Next */}
-          <button className="text-gray-400 hover:text-white px-2 py-1 text-sm">
-            &gt;
-          </button>
+          <svg
+            width="11"
+            height="19"
+            viewBox="0 0 11 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L9.31884 9.19335L1 17.3867"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </div>
       </div>
     </div>
